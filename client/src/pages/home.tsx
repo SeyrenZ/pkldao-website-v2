@@ -766,11 +766,11 @@ const Home = () => {
                     <ul className="space-y-2 text-gray-600">
                       <li className="flex items-center space-x-2">
                         <i className="fas fa-clock text-gray-400"></i>
-                        <span>V2 with PKL Predict</span>
+                        <span>V2 with Advanced Profiles</span>
                       </li>
                       <li className="flex items-center space-x-2">
                         <i className="fas fa-clock text-gray-400"></i>
-                        <span>AI Match Predictions</span>
+                        <span>Social Layer & Highlight Reels</span>
                       </li>
                       <li className="flex items-center space-x-2">
                         <i className="fas fa-clock text-gray-400"></i>
@@ -956,7 +956,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Coming Soon Section */}
+      {/* PKL Personal Player Profile Section */}
       <section className="py-20 bg-gradient-to-br from-pkl-green to-green-600 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-pkl-green/90 to-transparent"></div>
         
@@ -973,37 +973,44 @@ const Home = () => {
             {/* Left Content */}
             <div className="text-white space-y-8">
               <div className="inline-flex items-center bg-pkl-yellow text-pkl-green px-4 py-2 rounded-full font-semibold">
-                <span>coming soon...</span>
+                <i className="fas fa-user mr-2"></i>
+                <span>Core Feature</span>
               </div>
               
-              <h2 className="text-4xl lg:text-5xl font-bold">PKL Predict</h2>
+              <h2 className="text-4xl lg:text-5xl font-bold">Your Pickleball Identity. One Profile, All Your Achievements.</h2>
               <p className="text-xl text-white/90 leading-relaxed">
-                Bet on matches, predict outcomes, and win $PKL rewards. Powered by AI and community-driven leaderboards. The future of sports prediction is here.
+                From XP points to NFT badges — your PKL profile grows as you play, connect, and rise in the community.
               </p>
 
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-6 h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
-                    <i className="fas fa-brain text-pkl-green text-sm"></i>
+                    <i className="fas fa-id-card text-pkl-green text-sm"></i>
                   </div>
-                  <span className="text-lg">AI-powered match predictions with 85% accuracy</span>
+                  <span className="text-lg">Unique Player ID: NFT-linked, verifiable, and recognized worldwide</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-6 h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
+                    <i className="fas fa-level-up-alt text-pkl-green text-sm"></i>
+                  </div>
+                  <span className="text-lg">XP & Leveling System: earn XP by playing, events, community engagement</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-6 h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
                     <i className="fas fa-trophy text-pkl-green text-sm"></i>
                   </div>
-                  <span className="text-lg">Weekly prediction tournaments with $PKL prizes</span>
+                  <span className="text-lg">Achievements & Badges: unlock milestones and showcase your journey</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-6 h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
-                    <i className="fas fa-chart-line text-pkl-green text-sm"></i>
+                    <i className="fas fa-chart-bar text-pkl-green text-sm"></i>
                   </div>
-                  <span className="text-lg">Global leaderboards and prediction stats tracking</span>
+                  <span className="text-lg">Stats Dashboard: track matches, win rate, clubs, and global rankings</span>
                 </div>
               </div>
 
-              <button className="bg-pkl-yellow text-pkl-green px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-400 transition-colors" data-testid="button-get-notified">
-                Get Notified
+              <button className="bg-pkl-yellow text-pkl-green px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-400 transition-colors" data-testid="button-claim-profile">
+                Claim Your Profile in the Presale →
               </button>
             </div>
 
@@ -1017,65 +1024,72 @@ const Home = () => {
                     <div className="p-6 space-y-6">
                       {/* Header */}
                       <div className="flex items-center justify-between">
-                        <div className="text-2xl font-bold text-gray-900">PKL Predict</div>
-                        <div className="text-sm text-pkl-green font-semibold">BETA</div>
+                        <div className="text-2xl font-bold text-gray-900">PKL Profile</div>
+                        <div className="w-8 h-8 bg-pkl-green rounded-full flex items-center justify-center">
+                          <i className="fas fa-user text-white text-sm"></i>
+                        </div>
                       </div>
 
-                      {/* Live Match Prediction */}
+                      {/* Player Profile Card */}
                       <div className="bg-gradient-to-r from-pkl-green to-green-600 rounded-2xl p-4 text-white">
-                        <div className="text-sm text-center mb-3">LIVE MATCH</div>
+                        <div className="flex items-center space-x-3 mb-4">
+                          <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                            <i className="fas fa-user text-white text-xl"></i>
+                          </div>
+                          <div>
+                            <div className="text-xl font-bold">Alex Rodriguez</div>
+                            <div className="text-sm opacity-90">Level 42 • 2,847 XP</div>
+                            <div className="text-xs opacity-75">#PKL2847 • Verified Player</div>
+                          </div>
+                        </div>
                         
-                        <div className="flex items-center justify-between mb-4">
-                          <div className="text-center">
-                            <div className="w-10 h-10 bg-white/20 rounded-full mx-auto mb-2 flex items-center justify-center">
-                              <i className="fas fa-user text-white text-sm"></i>
-                            </div>
-                            <div className="text-xs font-semibold">Sarah K.</div>
-                          </div>
-                          <div className="text-center">
-                            <div className="text-lg font-bold">VS</div>
-                          </div>
-                          <div className="text-center">
-                            <div className="w-10 h-10 bg-white/20 rounded-full mx-auto mb-2 flex items-center justify-center">
-                              <i className="fas fa-user text-white text-sm"></i>
-                            </div>
-                            <div className="text-xs font-semibold">Mike R.</div>
-                          </div>
+                        {/* Dynamic XP Bar */}
+                        <div className="bg-white/20 rounded-full h-3 mb-2 overflow-hidden">
+                          <div className="bg-pkl-yellow h-full w-3/4 rounded-full transition-all duration-1000"></div>
                         </div>
+                        <div className="text-xs opacity-90">153 XP to Level 43</div>
+                      </div>
 
-                        <div className="grid grid-cols-2 gap-2">
-                          <button className="bg-white/20 py-2 rounded-lg text-sm font-semibold">Sarah 67%</button>
-                          <button className="bg-white/20 py-2 rounded-lg text-sm font-semibold">Mike 33%</button>
+                      {/* Stats Grid */}
+                      <div className="grid grid-cols-2 gap-3">
+                        <div className="bg-gray-50 rounded-xl p-3 text-center">
+                          <div className="text-2xl font-bold text-pkl-green">147</div>
+                          <div className="text-xs text-gray-600">Matches Won</div>
+                        </div>
+                        <div className="bg-gray-50 rounded-xl p-3 text-center">
+                          <div className="text-2xl font-bold text-pkl-orange">23</div>
+                          <div className="text-xs text-gray-600">Tournaments</div>
+                        </div>
+                        <div className="bg-gray-50 rounded-xl p-3 text-center">
+                          <div className="text-2xl font-bold text-blue-600">#12</div>
+                          <div className="text-xs text-gray-600">City Rank</div>
+                        </div>
+                        <div className="bg-gray-50 rounded-xl p-3 text-center">
+                          <div className="text-2xl font-bold text-purple-600">5</div>
+                          <div className="text-xs text-gray-600">Clubs</div>
                         </div>
                       </div>
 
-                      {/* Prediction Stats */}
+                      {/* NFT Badges Showcase */}
                       <div className="space-y-3">
-                        <div className="bg-gray-50 rounded-xl p-4">
-                          <div className="flex justify-between items-center mb-2">
-                            <span className="text-sm text-gray-600">Your Predictions</span>
-                            <span className="text-sm font-bold text-pkl-green">12/15</span>
+                        <div className="flex items-center justify-between">
+                          <div className="font-semibold text-gray-900">Achievement Badges</div>
+                          <div className="text-sm text-pkl-green">12 Earned</div>
+                        </div>
+                        <div className="flex space-x-2">
+                          <div className="w-12 h-12 bg-gradient-to-br from-pkl-yellow to-pkl-green rounded-xl flex items-center justify-center shadow-lg">
+                            <i className="fas fa-trophy text-white"></i>
                           </div>
-                          <div className="bg-gray-200 rounded-full h-2">
-                            <div className="bg-pkl-green h-full w-4/5 rounded-full"></div>
+                          <div className="w-12 h-12 bg-gradient-to-br from-pkl-orange to-red-500 rounded-xl flex items-center justify-center shadow-lg">
+                            <i className="fas fa-fire text-white"></i>
+                          </div>
+                          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-pkl-green rounded-xl flex items-center justify-center shadow-lg">
+                            <i className="fas fa-star text-white"></i>
+                          </div>
+                          <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg">
+                            <i className="fas fa-crown text-white"></i>
                           </div>
                         </div>
-
-                        <div className="bg-gray-50 rounded-xl p-4">
-                          <div className="flex justify-between items-center">
-                            <span className="text-sm text-gray-600">Rewards Earned</span>
-                            <span className="font-bold text-pkl-orange">+247 $PKL</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* AI Insight */}
-                      <div className="bg-gradient-to-r from-pkl-yellow to-yellow-400 rounded-xl p-4">
-                        <div className="flex items-center space-x-2 mb-2">
-                          <i className="fas fa-robot text-gray-900"></i>
-                          <span className="text-sm font-bold text-gray-900">AI Insight</span>
-                        </div>
-                        <p className="text-xs text-gray-800">Sarah has won 8/10 recent matches against similar ranked opponents. Weather favors aggressive play.</p>
                       </div>
                     </div>
                   </div>
