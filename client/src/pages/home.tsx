@@ -665,13 +665,6 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="bg-white/20 rounded-xl p-4 mt-8">
-                <p className="text-sm">
-                  <span className="font-semibold">Fair launch</span> • 
-                  <span className="font-semibold">No private sale</span> • 
-                  <span className="font-semibold">On-chain verified</span>
-                </p>
-              </div>
             </div>
           </div>
         </div>
