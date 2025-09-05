@@ -1,0 +1,150 @@
+# Prompt for Website Generator: PKL.CLUB Presale Landing Page
+
+## Goal
+Create a **high-converting presale website** for **PKL.CLUB** — the world’s first decentralized Pickleball community and $PKL token.  
+The site must **copy the structure, controls, and UI inspiration** from **Best Wallet’s site (https://bestwallet.com/en/)** while replacing all content with PKL-specific content.  
+
+## Theme & Design
+- **Light theme**, clean and modern.
+- Rounded containers with soft shadows.
+- Animated countdown timers, hover effects, and scroll-based reveals.
+- **Color palette:**
+  - Green `#00a86b` (primary CTA, brand)
+  - Yellow `#c4f000` (accent, highlights, progress bars)
+  - White `#eee8e8` (background, cards)
+  - Orange `#ff533e` (secondary CTA, urgency, alerts)
+- Typography: Bold geometric sans (Poppins, Inter). Body text clean sans (Inter/Roboto).
+- Icons: Flat, playful, 2.5D style (sporty / crypto inspired).
+
+---
+
+## Website Structure
+
+### 1. **Hero Section (Above-the-Fold)**
+- **Left side payoff (headline area):**
+  - Headline: *World’s First Decentralized Pickleball Community*
+  - Subheadline: *The PKL Token is Coming Soon!*
+  - Supporting copy: *Join the revolution in decentralized sports communities. The future of Pickleball is almost here!*
+  - Bullet highlights with green check icons:
+    - *Play & Earn: climb leaderboards, win rewards, unlock collectibles.*
+    - *All-in-One Platform: profiles, marketplace, messaging, and events.*
+    - *Real Utility: pay for gear, tickets, and prizes with $PKL.*
+- **Right side presale box (sticky on desktop, below on mobile):**
+  - Countdown timer until price increase.
+  - Progress bar in yellow `#c4f000`.
+  - Total USD raised + live $PKL price.
+  - CTA buttons:
+    - Primary: **Buy with Card** (green)
+    - Secondary: **Buy with Crypto** (orange)
+  - Small link: *Don’t have a wallet?* (guide modal)
+  - Security note: *Ethereum-based • Secure • Instant utility*
+
+---
+
+### 2. **Buy $PKL Now (Benefits Section)**
+- Title: *Buy $PKL Token Now!*
+- Subhead: *PKL.CLUB combines the world’s fastest growing sport with blockchain innovation. Owning $PKL gives you more than a token — it gives you a place in the Pickleball revolution.*
+- Four benefit cards (same style as Best Wallet’s):
+  1. **Exclusive Access to Tournaments** — Use $PKL for registration and prizes.
+  2. **Reduced Marketplace Fees** — Lower costs for players and vendors inside PKL.CLUB.
+  3. **Staking Rewards** — Stake $PKL to earn yield and XP boosts.
+  4. **Community Governance** — Vote on new features, tournaments, and partnerships.
+
+---
+
+### 3. **PKL.CLUB Ecosystem**
+- Inspired by Best Wallet ecosystem section.
+- Layout: Tabs or feature list on the left, mockup on the right (showing PKL profile UI).
+- Ecosystem features:
+  - **Player Profiles** — XP, stats, achievements, NFT badges.
+  - **Club Pages** — Showcase members, events, gear.
+  - **Marketplace** — Gear, services, NFT collectibles, event tickets.
+  - **Messaging & Groups** — Global and local community hubs.
+  - **Events** — Tournament registrations, NFT tickets, $PKL prize pools.
+  - **Leaderboards** — Local, national, and global rankings.
+  - **Collectibles** — Earn and trade NFT achievements.
+
+---
+
+### 4. **Key Features (Cards)**
+Three large cards like Best Wallet’s Key Features section:
+1. **Gamified Player Profiles** — Level up, unlock achievements, earn rewards.
+2. **Community Hub** — Join clubs, groups, and global Pickleball events.
+3. **Marketplace with $PKL** — Buy, sell, and trade Pickleball gear and digital assets.
+
+---
+
+### 5. **Tokenomics**
+- Headline: *$PKL Tokenomics*
+- Subhead: *Total Supply: 10,000,000,000 $PKL*
+- Visual pie chart (bright, playful style).
+- Distribution:
+  - Presale: 20%  
+  - Development: 25%  
+  - Staking: 15%  
+  - Partners: 15%  
+  - Exchanges: 15%  
+  - Founders Fund: 10%
+- Notes: *Fair launch • No private sale • On-chain verified*
+
+---
+
+### 6. **Roadmap**
+- Headline: *Roadmap*
+- 4 Phases with timeline line (inspired by Best Wallet’s roadmap).
+- Phase 1: Presale, token launch, MVP release.  
+- Phase 2: Platform V1, player/club onboarding, events calendar.  
+- Phase 3: V2 with Pickle Predict (AI match predictions) + VR Pickleball.  
+- Phase 4: DAO governance, loans for clubs/players, global expansion.
+
+---
+
+### 7. **How to Buy $PKL**
+- 4 steps (same style as Best Wallet’s How To Buy section):
+  1. Connect your wallet or register in PKL.CLUB.
+  2. Choose your $PKL amount.
+  3. Buy with Card or Crypto.
+  4. Claim your tokens instantly.
+
+---
+
+### 8. **Coming Soon Section**
+- Like Best Card teaser.
+- Title: *PKL Predict — Coming Soon…*
+- Description: *Bet on matches, predict outcomes, and win $PKL rewards. Powered by AI and community-driven leaderboards.*
+- Visual: playful mockup of “Pickle Predict” app.
+
+---
+
+### 9. **FAQ Section**
+Accordion-style, same design as Best Wallet.
+- What is PKL.CLUB?  
+- What is $PKL token?  
+- How do I stake tokens?  
+- Can I use $PKL in real tournaments?  
+- Why should I join the presale?  
+
+---
+
+### 10. **Footer**
+- Links: Whitepaper, Roadmap, Risk Disclaimer, Terms & Privacy.  
+- Social buttons: Telegram, Discord, Twitter (X).  
+- Legal disclaimer: *PKL.CLUB is not investment advice. Cryptocurrency may be unregulated in your jurisdiction.*  
+
+---
+
+## Extra Next-Level Features to Include
+- **Dynamic XP Bar in Player Profiles** — grows as you scroll.  
+- **Gamification animations** — confetti when hitting milestones.  
+- **Interactive Leaderboard Preview** — show top global players in real time.  
+- **Map Visualization** — glowing hotspots for active Pickleball clubs worldwide.  
+- **NFT Badge Carousel** — rotating collectible badges on profile previews.  
+- **Community Challenges Section** — “This month: 10,000 matches played unlocks global NFT badge.”  
+
+---
+
+## Deliverables
+- One-page presale landing site.
+- Responsive for desktop, tablet, mobile.
+- Sticky presale box on desktop, bottom sticky CTA on mobile.
+- Smooth scroll and hover effects.
