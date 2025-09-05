@@ -16,6 +16,7 @@ const Home = () => {
   });
 
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [openStep, setOpenStep] = useState<number | null>(null);
   const isMobile = useIsMobile();
 
   useEffect(() => {
@@ -48,6 +49,10 @@ const Home = () => {
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index);
+  };
+
+  const toggleStep = (index: number) => {
+    setOpenStep(openStep === index ? null : index);
   };
 
   const faqData = [
@@ -838,50 +843,114 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Steps */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Accordion Steps */}
+          <div className="max-w-4xl mx-auto space-y-4">
             {/* Step 1 */}
-            <div className="text-center" data-testid="step-1">
-              <div className="w-20 h-20 bg-pkl-green rounded-2xl flex items-center justify-center mx-auto mb-6 hover-scale">
-                <span className="text-2xl font-bold text-white">1</span>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-                <h3 className="font-bold text-gray-900 mb-2">Connect your wallet or register in PKL.CLUB</h3>
-                <p className="text-gray-600 text-sm">Set up your crypto wallet or create an account on our platform to get started.</p>
-              </div>
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-100" data-testid="step-1">
+              <button
+                onClick={() => toggleStep(1)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
+              >
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-pkl-green rounded-xl flex items-center justify-center">
+                    <span className="text-xl font-bold text-white">1</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Connect your wallet or register in PKL.CLUB</h3>
+                    <p className="text-gray-600">Set up your account to get started</p>
+                  </div>
+                </div>
+                <i className={`fas fa-chevron-down text-gray-400 transform transition-transform ${openStep === 1 ? 'rotate-180' : ''}`}></i>
+              </button>
+              {openStep === 1 && (
+                <div className="px-6 pb-6 border-t border-gray-100">
+                  <p className="text-gray-600 leading-relaxed">
+                    Set up your crypto wallet (MetaMask, WalletConnect, etc.) or create an account directly on our platform. 
+                    This is your gateway to the PKL.CLUB ecosystem and allows you to securely purchase and manage your tokens.
+                  </p>
+                </div>
+              )}
             </div>
 
             {/* Step 2 */}
-            <div className="text-center" data-testid="step-2">
-              <div className="w-20 h-20 bg-pkl-yellow rounded-2xl flex items-center justify-center mx-auto mb-6 hover-scale">
-                <span className="text-2xl font-bold text-gray-900">2</span>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-                <h3 className="font-bold text-gray-900 mb-2">Choose your $PKL amount</h3>
-                <p className="text-gray-600 text-sm">Select how many $PKL tokens you want to purchase during the presale.</p>
-              </div>
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-100" data-testid="step-2">
+              <button
+                onClick={() => toggleStep(2)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
+              >
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-pkl-yellow rounded-xl flex items-center justify-center">
+                    <span className="text-xl font-bold text-gray-900">2</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Choose your $PKL amount</h3>
+                    <p className="text-gray-600">Select your investment amount</p>
+                  </div>
+                </div>
+                <i className={`fas fa-chevron-down text-gray-400 transform transition-transform ${openStep === 2 ? 'rotate-180' : ''}`}></i>
+              </button>
+              {openStep === 2 && (
+                <div className="px-6 pb-6 border-t border-gray-100">
+                  <p className="text-gray-600 leading-relaxed">
+                    Decide how many $PKL tokens you want to purchase during the presale. You can start with any amount 
+                    that fits your budget. Remember, early participants get the best prices and exclusive benefits.
+                  </p>
+                </div>
+              )}
             </div>
 
             {/* Step 3 */}
-            <div className="text-center" data-testid="step-3">
-              <div className="w-20 h-20 bg-pkl-orange rounded-2xl flex items-center justify-center mx-auto mb-6 hover-scale">
-                <span className="text-2xl font-bold text-white">3</span>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-                <h3 className="font-bold text-gray-900 mb-2">Buy with Card or Crypto</h3>
-                <p className="text-gray-600 text-sm">Complete your purchase using your preferred payment method - card or cryptocurrency.</p>
-              </div>
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-100" data-testid="step-3">
+              <button
+                onClick={() => toggleStep(3)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
+              >
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-pkl-orange rounded-xl flex items-center justify-center">
+                    <span className="text-xl font-bold text-white">3</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Buy with Card or Crypto</h3>
+                    <p className="text-gray-600">Complete your purchase securely</p>
+                  </div>
+                </div>
+                <i className={`fas fa-chevron-down text-gray-400 transform transition-transform ${openStep === 3 ? 'rotate-180' : ''}`}></i>
+              </button>
+              {openStep === 3 && (
+                <div className="px-6 pb-6 border-t border-gray-100">
+                  <p className="text-gray-600 leading-relaxed">
+                    Complete your purchase using your preferred payment method. We accept major credit cards for convenience 
+                    or cryptocurrency (ETH, USDT, BTC) for those who prefer decentralized payments. All transactions are secure and instant.
+                  </p>
+                </div>
+              )}
             </div>
 
             {/* Step 4 */}
-            <div className="text-center" data-testid="step-4">
-              <div className="w-20 h-20 bg-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6 hover-scale">
-                <span className="text-2xl font-bold text-white">4</span>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-                <h3 className="font-bold text-gray-900 mb-2">Claim your tokens instantly</h3>
-                <p className="text-gray-600 text-sm">Receive your $PKL tokens immediately and start using them in the PKL.CLUB ecosystem.</p>
-              </div>
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-100" data-testid="step-4">
+              <button
+                onClick={() => toggleStep(4)}
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
+              >
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center">
+                    <span className="text-xl font-bold text-white">4</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Claim your tokens instantly</h3>
+                    <p className="text-gray-600">Start using $PKL immediately</p>
+                  </div>
+                </div>
+                <i className={`fas fa-chevron-down text-gray-400 transform transition-transform ${openStep === 4 ? 'rotate-180' : ''}`}></i>
+              </button>
+              {openStep === 4 && (
+                <div className="px-6 pb-6 border-t border-gray-100">
+                  <p className="text-gray-600 leading-relaxed">
+                    Receive your $PKL tokens immediately after purchase and start using them right away in the PKL.CLUB ecosystem. 
+                    Join tournaments, trade in the marketplace, stake for rewards, and participate in community governance.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
