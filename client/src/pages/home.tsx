@@ -160,17 +160,6 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* App Store Buttons */}
-              <div className="flex space-x-4 pt-4">
-                <button className="bg-black text-white px-6 py-3 rounded-xl flex items-center space-x-2 hover:bg-gray-800 transition-colors" data-testid="button-google-play">
-                  <i className="fab fa-google-play"></i>
-                  <span>Google Play</span>
-                </button>
-                <button className="bg-black text-white px-6 py-3 rounded-xl flex items-center space-x-2 hover:bg-gray-800 transition-colors" data-testid="button-app-store">
-                  <i className="fab fa-apple"></i>
-                  <span>App Store</span>
-                </button>
-              </div>
             </div>
 
             {/* Right Presale Box */}
@@ -1178,7 +1167,7 @@ const Home = () => {
             {/* Social & Contact */}
             <div className="space-y-4">
               <h3 className="font-semibold text-lg">Community</h3>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 mb-6">
                 <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pkl-green transition-colors" data-testid="link-telegram">
                   <i className="fab fa-telegram"></i>
                 </a>
@@ -1191,6 +1180,27 @@ const Home = () => {
                 <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pkl-green transition-colors" data-testid="link-youtube">
                   <i className="fab fa-youtube"></i>
                 </a>
+              </div>
+              
+              {/* App Store Buttons */}
+              <div className="space-y-3">
+                <h4 className="font-medium text-gray-300">Download App</h4>
+                <div className="space-y-2">
+                  <button className="w-full bg-black text-white px-4 py-3 rounded-xl flex items-center space-x-3 hover:bg-gray-800 transition-colors" data-testid="button-google-play">
+                    <i className="fab fa-google-play text-lg"></i>
+                    <div className="text-left">
+                      <div className="text-xs text-gray-400">Get it on</div>
+                      <div className="font-semibold">Google Play</div>
+                    </div>
+                  </button>
+                  <button className="w-full bg-black text-white px-4 py-3 rounded-xl flex items-center space-x-3 hover:bg-gray-800 transition-colors" data-testid="button-app-store">
+                    <i className="fab fa-apple text-lg"></i>
+                    <div className="text-left">
+                      <div className="text-xs text-gray-400">Download on the</div>
+                      <div className="font-semibold">App Store</div>
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
