@@ -26,7 +26,7 @@ const KeyFeatures = () => {
               <h3 className="text-2xl font-bold mb-4">
                 Gamified Player Profiles
               </h3>
-              <p className="text-white/90 mb-6">
+              <p className="text-white mb-6">
                 Level up, unlock achievements, earn rewards. Track your progress
                 with our comprehensive XP system and showcase your skills.
               </p>
@@ -103,7 +103,7 @@ const KeyFeatures = () => {
                 <i className="fas fa-shopping-cart text-white text-2xl"></i>
               </div>
               <h3 className="text-2xl font-bold mb-4">Marketplace with $PKL</h3>
-              <p className="text-white/90 mb-6">
+              <p className="text-white mb-6">
                 Buy, sell, and trade Pickleball gear and digital assets. Use
                 $PKL tokens for seamless transactions and exclusive discounts.
               </p>

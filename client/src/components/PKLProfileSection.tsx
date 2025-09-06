@@ -1,20 +1,91 @@
 import React from "react";
 
+// Reusable components
+const FeatureItem = ({ icon, text }: { icon: string; text: string }) => (
+  <div className="flex items-center space-x-3">
+    <div className="w-10 h-10 bg-pkl-yellow rounded-full flex items-center justify-center">
+      <i className={`fas fa-${icon} text-neutral-800/90 text-lg`}></i>
+    </div>
+    <span className="text-lg">{text}</span>
+  </div>
+);
+
+const StatCard = ({ value, label }: { value: string; label: string }) => (
+  <div className="text-center p-4 bg-zinc-100 rounded-2xl">
+    <div className="text-3xl font-bold text-pkl-green mb-2">{value}</div>
+    <div className="text-neutral-600 text-sm font-medium">{label}</div>
+  </div>
+);
+
+const BadgeIcon = ({ icon, gradient }: { icon: string; gradient: string }) => (
+  <div
+    className={`w-12 h-12 ${gradient} rounded-xl flex items-center justify-center shadow-lg`}
+  >
+    <i className={`fas fa-${icon} text-white`}></i>
+  </div>
+);
+
+const FloatingElement = ({
+  className,
+  children,
+  delay,
+}: {
+  className: string;
+  children: React.ReactNode;
+  delay?: string;
+}) => (
+  <div
+    className={`absolute ${className} floating-element`}
+    style={delay ? { animationDelay: delay } : {}}
+  >
+    {children}
+  </div>
+);
+
 const PKLProfileSection = () => {
+  const features = [
+    {
+      icon: "id-card",
+      text: "Unique Player ID: NFT-linked, verifiable, and recognized worldwide",
+    },
+    {
+      icon: "chart-line",
+      text: "Dynamic XP System: Levels, skill tracking, and performance analytics",
+    },
+    {
+      icon: "medal",
+      text: "NFT Achievement Badges: Collectible proof of your pickleball journey",
+    },
+    {
+      icon: "users",
+      text: "Community Integration: Connect with players, clubs, and tournaments",
+    },
+  ];
+
+  const stats = [
+    { value: "1,247", label: "XP Points" },
+    { value: "84", label: "Matches Won" },
+    { value: "12", label: "Tournaments" },
+    { value: "3.8", label: "Skill Rating" },
+  ];
+
+  const badges = [
+    { icon: "trophy", gradient: "bg-pkl-green" },
+    { icon: "fire", gradient: "bg-pkl-orange" },
+    { icon: "star", gradient: "bg-blue-500" },
+    { icon: "crown", gradient: "bg-purple-500" },
+  ];
   return (
-    <section className="py-20 bg-gradient-to-br from-pkl-green to-green-600 relative overflow-hidden">
+    <section className="py-20 bg-pkl-green relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-pkl-green/90 to-transparent"></div>
 
       {/* Floating Elements */}
-      <div className="absolute top-10 right-10 floating-element opacity-30">
+      <FloatingElement className="top-10 right-10 opacity-30">
         <div className="w-32 h-32 bg-white/10 rounded-3xl backdrop-blur-sm"></div>
-      </div>
-      <div
-        className="absolute bottom-20 left-10 floating-element opacity-20"
-        style={{ animationDelay: "3s" }}
-      >
+      </FloatingElement>
+      <FloatingElement className="bottom-20 left-10 opacity-20" delay="3s">
         <div className="w-24 h-24 bg-pkl-yellow/20 rounded-2xl backdrop-blur-sm"></div>
-      </div>
+      </FloatingElement>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -25,65 +96,41 @@ const PKLProfileSection = () => {
               <span>Core Feature</span>
             </div>
 
-            <h2 className="text-4xl lg:text-5xl font-bold">
-              Your Pickleball Identity. One Profile, All Your Achievements.
+            <h2
+              className="text-4xl lg:text-5xl font-bold"
+              style={{
+                textShadow:
+                  "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 4px 6px 0px rgba(0, 0, 0, 0.2)",
+              }}
+            >
+              Your Pickleball{" "}
+              <span className="text-pkl-yellow font-bold">Identity</span>. One
+              Profile, All Your Achievements.
             </h2>
-            <p className="text-xl text-white/90 leading-relaxed">
+            <p className="text-xl text-white leading-relaxed">
               From XP points to NFT badges — your PKL profile grows as you play,
               connect, and rise in the community.
             </p>
 
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <div className="w-6 h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
-                  <i className="fas fa-id-card text-pkl-green text-sm"></i>
-                </div>
-                <span className="text-lg">
-                  Unique Player ID: NFT-linked, verifiable, and recognized
-                  worldwide
-                </span>
-              </div>
-
-              <div className="flex items-center space-x-3">
-                <div className="w-6 h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
-                  <i className="fas fa-chart-line text-pkl-green text-sm"></i>
-                </div>
-                <span className="text-lg">
-                  Dynamic XP System: Levels, skill tracking, and performance
-                  analytics
-                </span>
-              </div>
-
-              <div className="flex items-center space-x-3">
-                <div className="w-6 h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
-                  <i className="fas fa-medal text-pkl-green text-sm"></i>
-                </div>
-                <span className="text-lg">
-                  NFT Achievement Badges: Collectible proof of your pickleball
-                  journey
-                </span>
-              </div>
-
-              <div className="flex items-center space-x-3">
-                <div className="w-6 h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
-                  <i className="fas fa-users text-pkl-green text-sm"></i>
-                </div>
-                <span className="text-lg">
-                  Community Integration: Connect with players, clubs, and
-                  tournaments
-                </span>
-              </div>
+              {features.map((feature, index) => (
+                <FeatureItem
+                  key={index}
+                  icon={feature.icon}
+                  text={feature.text}
+                />
+              ))}
             </div>
 
             <div className="flex space-x-4 pt-4">
               <button
-                className="bg-pkl-yellow text-pkl-green px-8 py-3 rounded-xl font-bold hover:bg-yellow-300 transition-colors"
+                className="bg-pkl-yellow text-neutral-800/90 px-8 py-3 rounded-xl font-bold hover:bg-yellow-300 transition-colors"
                 data-testid="button-create-profile"
               >
                 Create Your Profile
               </button>
               <button
-                className="border-2 border-pkl-yellow text-pkl-yellow px-8 py-3 rounded-xl font-bold hover:bg-pkl-yellow hover:text-pkl-green transition-colors"
+                className="border-2 border-pkl-yellow text-pkl-yellow px-8 py-3 rounded-xl font-bold hover:bg-pkl-yellow hover:text-neutral-800/90 transition-colors"
                 data-testid="button-view-demo"
               >
                 View Demo
@@ -99,8 +146,8 @@ const PKLProfileSection = () => {
             >
               {/* Profile Header */}
               <div className="flex items-center space-x-4 mb-8">
-                <div className="w-20 h-20 bg-gradient-to-br from-pkl-green to-pkl-yellow rounded-2xl flex items-center justify-center shadow-lg">
-                  <i className="fas fa-user text-white text-2xl"></i>
+                <div className="w-20 h-20 bg-pkl-green rounded-2xl flex items-end justify-center shadow-lg">
+                  <i className="fas fa-user text-white text-6xl mb-[-1px]"></i>
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-neutral-800/90">
@@ -118,43 +165,22 @@ const PKLProfileSection = () => {
 
               {/* Stats Grid */}
               <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="text-center p-4 bg-gray-50 rounded-2xl">
-                  <div className="text-3xl font-bold text-pkl-green mb-2">
-                    1,247
-                  </div>
-                  <div className="text-neutral-600 text-sm">XP Points</div>
-                </div>
-                <div className="text-center p-4 bg-gray-50 rounded-2xl">
-                  <div className="text-3xl font-bold text-pkl-green mb-2">
-                    84
-                  </div>
-                  <div className="text-neutral-600 text-sm">Matches Won</div>
-                </div>
-                <div className="text-center p-4 bg-gray-50 rounded-2xl">
-                  <div className="text-3xl font-bold text-pkl-green mb-2">
-                    12
-                  </div>
-                  <div className="text-neutral-600 text-sm">Tournaments</div>
-                </div>
-                <div className="text-center p-4 bg-gray-50 rounded-2xl">
-                  <div className="text-3xl font-bold text-pkl-green mb-2">
-                    3.8
-                  </div>
-                  <div className="text-neutral-600 text-sm">Skill Rating</div>
-                </div>
+                {stats.map((stat, index) => (
+                  <StatCard key={index} value={stat.value} label={stat.label} />
+                ))}
               </div>
 
               {/* Progress Bar */}
               <div className="mb-8">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-neutral-700 font-semibold">
+                  <span className="text-neutral-800 font-semibold">
                     Level Progress
                   </span>
                   <span className="text-pkl-green text-sm">247/500 XP</span>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-3">
+                <div className="w-full bg-zinc-100 rounded-full h-3">
                   <div
-                    className="progress-bar h-3 rounded-full"
+                    className="bg-pkl-green h-3 rounded-full"
                     style={{ width: "49%" }}
                   ></div>
                 </div>
@@ -169,32 +195,28 @@ const PKLProfileSection = () => {
                   <div className="text-sm text-pkl-green">12 Earned</div>
                 </div>
                 <div className="flex space-x-2">
-                  <div className="w-12 h-12 bg-gradient-to-br from-pkl-yellow to-pkl-green rounded-xl flex items-center justify-center shadow-lg">
-                    <i className="fas fa-trophy text-white"></i>
-                  </div>
-                  <div className="w-12 h-12 bg-gradient-to-br from-pkl-orange to-red-500 rounded-xl flex items-center justify-center shadow-lg">
-                    <i className="fas fa-fire text-white"></i>
-                  </div>
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-pkl-green rounded-xl flex items-center justify-center shadow-lg">
-                    <i className="fas fa-star text-white"></i>
-                  </div>
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg">
-                    <i className="fas fa-crown text-white"></i>
-                  </div>
+                  {badges.map((badge, index) => (
+                    <BadgeIcon
+                      key={index}
+                      icon={badge.icon}
+                      gradient={badge.gradient}
+                    />
+                  ))}
                 </div>
               </div>
             </div>
 
             {/* Floating AI Elements */}
-            <div className="absolute -top-4 -right-4 w-16 h-16 bg-pkl-yellow rounded-2xl flex items-center justify-center shadow-lg floating-element">
-              <i className="fas fa-brain text-pkl-green text-xl"></i>
-            </div>
-            <div
-              className="absolute -bottom-4 -left-4 w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg floating-element"
-              style={{ animationDelay: "2s" }}
-            >
-              <i className="fas fa-chart-line text-pkl-green"></i>
-            </div>
+            <FloatingElement className="-top-4 -right-4">
+              <div className="w-16 h-16 bg-pkl-yellow rounded-2xl flex items-center justify-center shadow-lg">
+                <i className="fas fa-brain text-pkl-green text-xl"></i>
+              </div>
+            </FloatingElement>
+            <FloatingElement className="-bottom-4 -left-4" delay="2s">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg">
+                <i className="fas fa-chart-line text-pkl-green"></i>
+              </div>
+            </FloatingElement>
           </div>
         </div>
       </div>

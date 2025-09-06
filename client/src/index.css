@@ -260,3 +260,7 @@
     transform: translateY(-20px) rotate(5deg);
   }
 }
+
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
