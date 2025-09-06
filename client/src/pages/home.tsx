@@ -1118,11 +1118,11 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left: Card Visual */}
-            <div className="relative">
+            <div className="relative flex justify-center lg:justify-start">
               <div className="perspective-1000">
-                <div className="card-3d bg-gradient-to-br from-pkl-green to-green-600 rounded-3xl p-10 shadow-2xl transform hover:rotate-y-6 transition-transform duration-500 w-[480px] h-[300px]" data-testid="pkl-card-visual">
+                <div className="card-3d bg-gradient-to-br from-pkl-green to-green-600 rounded-3xl p-8 shadow-2xl transform hover:rotate-y-6 transition-transform duration-500 w-[480px] h-[300px]" data-testid="pkl-card-visual">
                   {/* Card Background Pattern */}
                   <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-2xl"></div>
                   <div className="absolute top-4 right-4 w-16 h-16 bg-white/20 rounded-full blur-2xl"></div>
@@ -1147,7 +1147,7 @@ const Home = () => {
                     </div>
                     
                     {/* Bottom Section - Card Details */}
-                    <div className="flex justify-between items-end">
+                    <div className="flex justify-between items-end pb-2">
                       <div>
                         <div className="text-gray-200 text-sm mb-1">CARD HOLDER</div>
                         <div className="text-white font-semibold text-lg">PKL MEMBER</div>
