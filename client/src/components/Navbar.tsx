@@ -14,42 +14,42 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8 font-fredoka font-medium">
             <a
               href="#benefits"
-              className="text-gray-600 hover:text-pkl-green transition-colors"
+              className="text-neutral-600 hover:text-pkl-green transition-colors"
               data-testid="nav-benefits"
             >
               Benefits
             </a>
             <a
               href="#ecosystem"
-              className="text-gray-600 hover:text-pkl-green transition-colors"
+              className="text-neutral-600 hover:text-pkl-green transition-colors"
               data-testid="nav-ecosystem"
             >
               Ecosystem
             </a>
             <a
               href="#tokenomics"
-              className="text-gray-600 hover:text-pkl-green transition-colors"
+              className="text-neutral-600 hover:text-pkl-green transition-colors"
               data-testid="nav-tokenomics"
             >
               Tokenomics
             </a>
             <a
               href="#pkl-card"
-              className="text-gray-600 hover:text-pkl-green transition-colors"
+              className="text-neutral-600 hover:text-pkl-green transition-colors"
               data-testid="nav-pkl-card"
             >
               PKL Card
             </a>
             <a
               href="#roadmap"
-              className="text-gray-600 hover:text-pkl-green transition-colors"
+              className="text-neutral-600 hover:text-pkl-green transition-colors"
               data-testid="nav-roadmap"
             >
               Roadmap
             </a>
             <a
               href="#faq"
-              className="text-gray-600 hover:text-pkl-green transition-colors"
+              className="text-neutral-600 hover:text-pkl-green transition-colors"
               data-testid="nav-faq"
             >
               FAQ
@@ -62,7 +62,7 @@ const Navbar = () => {
             </button>
           </div>
           <button className="md:hidden" data-testid="button-mobile-menu">
-            <i className="fas fa-bars text-gray-600"></i>
+            <i className="fas fa-bars text-neutral-600"></i>
           </button>
         </div>
       </div>

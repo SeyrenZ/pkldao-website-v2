@@ -195,7 +195,7 @@ const HeroSection = () => {
                   className="countdown-item bg-white rounded-xl p-3 text-center font-fredoka"
                 >
                   <div
-                    className="text-2xl font-bold text-neutral-900"
+                    className="text-2xl font-bold text-neutral-800/90"
                     data-testid={`countdown-${key}`}
                   >
                     {String(value).padStart(2, "0")}
@@ -223,7 +223,7 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="text-center mb-6 space-y-2 font-fredoka tracking-widest">
               <div className="text-white">
-                <span className="text-sm font-medium text-gray-300">
+                <span className="text-sm font-medium text-neutral-300">
                   TOTAL USD RAISED:{" "}
                 </span>
                 <span className="font-bold" data-testid="text-total-raised">
@@ -235,7 +235,7 @@ const HeroSection = () => {
                 </span>
               </div>
               <div className="text-white">
-                <span className="text-sm text-gray-300 font-medium">
+                <span className="text-sm text-neutral-300 font-medium">
                   1 $PKL ={" "}
                 </span>
                 <span className="font-bold" data-testid="text-current-price">
@@ -253,7 +253,7 @@ const HeroSection = () => {
                 Buy With Card
               </button>
               <button
-                className="w-full bg-pkl-yellow text-neutral-900 py-4 rounded-xl font-semibold text-lg hover:bg-pkl-yellow/50 transition-colors"
+                className="w-full bg-pkl-yellow text-neutral-800/90 py-4 rounded-xl font-semibold text-lg hover:bg-pkl-yellow/50 transition-colors"
                 data-testid="button-buy-crypto"
               >
                 Buy With Crypto

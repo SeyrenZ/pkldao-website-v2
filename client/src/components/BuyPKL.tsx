@@ -51,7 +51,7 @@ const BuyPKL = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800/90 mb-6 font-luckiest-guy tracking-widest">
             Buy $PKL Token Now!
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
             PKL.CLUB combines the world's fastest growing sport with blockchain
             innovation. Owning $PKL gives you more than a token — it gives you a
             place in the Pickleball revolution.

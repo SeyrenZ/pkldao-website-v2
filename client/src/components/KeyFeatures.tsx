@@ -5,7 +5,7 @@ const KeyFeatures = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800/90 mb-6">
             PKL.CLUB Key Features
           </h2>
         </div>
@@ -50,7 +50,7 @@ const KeyFeatures = () => {
 
           {/* Feature 2 */}
           <div
-            className="bg-gradient-to-br from-pkl-yellow to-yellow-500 rounded-3xl p-8 text-neutral-900 relative overflow-hidden"
+            className="bg-gradient-to-br from-pkl-yellow to-yellow-500 rounded-3xl p-8 text-neutral-800/90 relative overflow-hidden"
             data-testid="card-feature-community"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/20 rounded-full -mr-16 -mt-16"></div>
@@ -58,10 +58,10 @@ const KeyFeatures = () => {
 
             <div className="relative z-10">
               <div className="w-16 h-16 bg-white/30 rounded-2xl flex items-center justify-center mb-6">
-                <i className="fas fa-users text-neutral-900 text-2xl"></i>
+                <i className="fas fa-users text-neutral-800/90 text-2xl"></i>
               </div>
               <h3 className="text-2xl font-bold mb-4">Community Hub</h3>
-              <p className="text-gray-800 mb-6">
+              <p className="text-neutral-800 mb-6">
                 Join clubs, groups, and global Pickleball events. Connect with
                 players worldwide and build lasting friendships on and off the
                 court.

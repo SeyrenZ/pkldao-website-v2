@@ -103,7 +103,7 @@ const PKLProfileSection = () => {
                   <i className="fas fa-user text-white text-2xl"></i>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-neutral-900">
+                  <h3 className="text-2xl font-bold text-neutral-800/90">
                     Sarah Chen
                   </h3>
                   <div className="flex items-center space-x-2">
@@ -111,7 +111,7 @@ const PKLProfileSection = () => {
                       Level 23
                     </span>
                     <div className="w-2 h-2 bg-pkl-green rounded-full"></div>
-                    <span className="text-gray-600">#PKL2024</span>
+                    <span className="text-neutral-600">#PKL2024</span>
                   </div>
                 </div>
               </div>
@@ -122,32 +122,32 @@ const PKLProfileSection = () => {
                   <div className="text-3xl font-bold text-pkl-green mb-2">
                     1,247
                   </div>
-                  <div className="text-gray-600 text-sm">XP Points</div>
+                  <div className="text-neutral-600 text-sm">XP Points</div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded-2xl">
                   <div className="text-3xl font-bold text-pkl-green mb-2">
                     84
                   </div>
-                  <div className="text-gray-600 text-sm">Matches Won</div>
+                  <div className="text-neutral-600 text-sm">Matches Won</div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded-2xl">
                   <div className="text-3xl font-bold text-pkl-green mb-2">
                     12
                   </div>
-                  <div className="text-gray-600 text-sm">Tournaments</div>
+                  <div className="text-neutral-600 text-sm">Tournaments</div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded-2xl">
                   <div className="text-3xl font-bold text-pkl-green mb-2">
                     3.8
                   </div>
-                  <div className="text-gray-600 text-sm">Skill Rating</div>
+                  <div className="text-neutral-600 text-sm">Skill Rating</div>
                 </div>
               </div>
 
               {/* Progress Bar */}
               <div className="mb-8">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-gray-700 font-semibold">
+                  <span className="text-neutral-700 font-semibold">
                     Level Progress
                   </span>
                   <span className="text-pkl-green text-sm">247/500 XP</span>
@@ -163,7 +163,7 @@ const PKLProfileSection = () => {
               {/* NFT Badges Showcase */}
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <div className="font-semibold text-neutral-900">
+                  <div className="font-semibold text-neutral-800/90">
                     Achievement Badges
                   </div>
                   <div className="text-sm text-pkl-green">12 Earned</div>

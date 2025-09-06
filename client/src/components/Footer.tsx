@@ -13,7 +13,7 @@ const Footer = () => {
               </div>
               <span className="text-xl font-bold">PKL.CLUB</span>
             </div>
-            <p className="text-gray-400">
+            <p className="text-neutral-400">
               The world's first decentralized Pickleball community. Join the
               revolution and earn $PKL tokens while playing the fastest growing
               sport.
@@ -26,28 +26,28 @@ const Footer = () => {
             <div className="space-y-2">
               <a
                 href="#"
-                className="block text-gray-400 hover:text-pkl-green transition-colors"
+                className="block text-neutral-400 hover:text-pkl-green transition-colors"
                 data-testid="link-whitepaper"
               >
                 Whitepaper
               </a>
               <a
                 href="#roadmap"
-                className="block text-gray-400 hover:text-pkl-green transition-colors"
+                className="block text-neutral-400 hover:text-pkl-green transition-colors"
                 data-testid="link-roadmap"
               >
                 Roadmap
               </a>
               <a
                 href="#tokenomics"
-                className="block text-gray-400 hover:text-pkl-green transition-colors"
+                className="block text-neutral-400 hover:text-pkl-green transition-colors"
                 data-testid="link-tokenomics"
               >
                 Tokenomics
               </a>
               <a
                 href="#"
-                className="block text-gray-400 hover:text-pkl-green transition-colors"
+                className="block text-neutral-400 hover:text-pkl-green transition-colors"
                 data-testid="link-smart-contract"
               >
                 Smart Contract
@@ -61,28 +61,28 @@ const Footer = () => {
             <div className="space-y-2">
               <a
                 href="#"
-                className="block text-gray-400 hover:text-pkl-green transition-colors"
+                className="block text-neutral-400 hover:text-pkl-green transition-colors"
                 data-testid="link-risk-disclaimer"
               >
                 Risk Disclaimer
               </a>
               <a
                 href="#"
-                className="block text-gray-400 hover:text-pkl-green transition-colors"
+                className="block text-neutral-400 hover:text-pkl-green transition-colors"
                 data-testid="link-terms"
               >
                 Terms of Service
               </a>
               <a
                 href="#"
-                className="block text-gray-400 hover:text-pkl-green transition-colors"
+                className="block text-neutral-400 hover:text-pkl-green transition-colors"
                 data-testid="link-privacy"
               >
                 Privacy Policy
               </a>
               <a
                 href="#"
-                className="block text-gray-400 hover:text-pkl-green transition-colors"
+                className="block text-neutral-400 hover:text-pkl-green transition-colors"
                 data-testid="link-cookies"
               >
                 Cookie Policy
@@ -126,7 +126,7 @@ const Footer = () => {
 
             {/* App Store Buttons */}
             <div className="space-y-3">
-              <h4 className="font-medium text-gray-300">Download App</h4>
+              <h4 className="font-medium text-neutral-300">Download App</h4>
               <div className="space-y-2">
                 <button
                   className="w-full bg-black text-white px-4 py-3 rounded-xl flex items-center space-x-3 hover:bg-gray-800 transition-colors"
@@ -134,7 +134,7 @@ const Footer = () => {
                 >
                   <i className="fab fa-google-play text-lg"></i>
                   <div className="text-left">
-                    <div className="text-xs text-gray-400">Get it on</div>
+                    <div className="text-xs text-neutral-400">Get it on</div>
                     <div className="font-semibold">Google Play</div>
                   </div>
                 </button>
@@ -144,7 +144,9 @@ const Footer = () => {
                 >
                   <i className="fab fa-apple text-lg"></i>
                   <div className="text-left">
-                    <div className="text-xs text-gray-400">Download on the</div>
+                    <div className="text-xs text-neutral-400">
+                      Download on the
+                    </div>
                     <div className="font-semibold">App Store</div>
                   </div>
                 </button>
@@ -155,10 +157,10 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm">
+            <p className="text-neutral-400 text-sm">
               © 2024 PKL.CLUB. All rights reserved.
             </p>
-            <p className="text-gray-400 text-sm text-center">
+            <p className="text-neutral-400 text-sm text-center">
               PKL.CLUB is not investment advice. Cryptocurrency may be
               unregulated in your jurisdiction.
               <a

@@ -24,7 +24,7 @@ const CardSection = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             PKL <span className="text-pkl-yellow">Card</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
             The first VISA card fully integrated with the PKL ecosystem. Spend
             your $PKL tokens anywhere VISA is accepted worldwide.
           </p>
@@ -68,7 +68,7 @@ const CardSection = () => {
                   {/* Bottom Section - Card Details */}
                   <div className="flex justify-between items-end pb-2">
                     <div>
-                      <div className="text-gray-200 text-sm mb-1">
+                      <div className="text-neutral-200 text-sm mb-1">
                         CARD HOLDER
                       </div>
                       <div className="text-white font-semibold text-lg">
@@ -76,7 +76,9 @@ const CardSection = () => {
                       </div>
                     </div>
                     <div>
-                      <div className="text-gray-200 text-sm mb-1">EXPIRES</div>
+                      <div className="text-neutral-200 text-sm mb-1">
+                        EXPIRES
+                      </div>
                       <div className="text-white font-semibold text-lg">
                         12/29
                       </div>
@@ -104,7 +106,7 @@ const CardSection = () => {
                   <h3 className="text-xl font-bold text-white mb-2">
                     Spend Worldwide
                   </h3>
-                  <p className="text-gray-300">
+                  <p className="text-neutral-300">
                     Use your PKL Card at over 100 million VISA acceptance points
                     worldwide. From local restaurants to online stores.
                   </p>
@@ -122,7 +124,7 @@ const CardSection = () => {
                   <h3 className="text-xl font-bold text-white mb-2">
                     PKL Rewards on Every Purchase
                   </h3>
-                  <p className="text-gray-300">
+                  <p className="text-neutral-300">
                     Earn 2% PKL tokens back on all purchases and 5% on
                     pickleball-related expenses. Build your PKL portfolio by
                     spending.
@@ -141,7 +143,7 @@ const CardSection = () => {
                   <h3 className="text-xl font-bold text-white mb-2">
                     Instant PKL to Fiat Conversion
                   </h3>
-                  <p className="text-gray-300">
+                  <p className="text-neutral-300">
                     Your PKL tokens are automatically converted to EUR/USD at
                     the moment of payment at the best exchange rate.
                   </p>
@@ -159,7 +161,7 @@ const CardSection = () => {
                   <h3 className="text-xl font-bold text-white mb-2">
                     Premium Benefits
                   </h3>
-                  <p className="text-gray-300">
+                  <p className="text-neutral-300">
                     No monthly fees, no foreign transaction fees, and exclusive
                     access to PKL events and tournaments.
                   </p>
@@ -173,13 +175,13 @@ const CardSection = () => {
                 <div className="text-3xl font-bold text-pkl-yellow mb-2">
                   100M+
                 </div>
-                <div className="text-gray-300">VISA Acceptance Points</div>
+                <div className="text-neutral-300">VISA Acceptance Points</div>
               </div>
               <div className="text-center" data-testid="card-stat-countries">
                 <div className="text-3xl font-bold text-pkl-green mb-2">
                   200+
                 </div>
-                <div className="text-gray-300">Countries & Territories</div>
+                <div className="text-neutral-300">Countries & Territories</div>
               </div>
             </div>
 
@@ -213,7 +215,7 @@ const CardSection = () => {
             <h3 className="text-xl font-bold text-white text-center mb-4">
               Bank-Level Security
             </h3>
-            <p className="text-gray-300 text-center">
+            <p className="text-neutral-300 text-center">
               EMV chip technology, 3D Secure verification, and real-time fraud
               monitoring protect every transaction.
             </p>
@@ -229,7 +231,7 @@ const CardSection = () => {
             <h3 className="text-xl font-bold text-white text-center mb-4">
               PKL App Integration
             </h3>
-            <p className="text-gray-300 text-center">
+            <p className="text-neutral-300 text-center">
               Manage your card directly from the PKL.CLUB app. Real-time
               notifications, spending controls, and transaction history.
             </p>
@@ -245,7 +247,7 @@ const CardSection = () => {
             <h3 className="text-xl font-bold text-white text-center mb-4">
               Ecosystem Benefits
             </h3>
-            <p className="text-gray-300 text-center">
+            <p className="text-neutral-300 text-center">
               Unlock special discounts with PKL partners, early access to
               events, and premium marketplace privileges.
             </p>

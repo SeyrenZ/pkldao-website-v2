@@ -38,7 +38,7 @@ const FAQSection = () => {
     <section id="faq" className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800/90 mb-6">
             Frequently Asked Questions
           </h2>
         </div>
@@ -55,11 +55,11 @@ const FAQSection = () => {
                 onClick={() => toggleFaq(index)}
                 data-testid={`faq-question-${index}`}
               >
-                <span className="font-semibold text-neutral-900">
+                <span className="font-semibold text-neutral-800/90">
                   {faq.question}
                 </span>
                 <i
-                  className={`fas transition-transform duration-300 text-gray-400 ${
+                  className={`fas transition-transform duration-300 text-neutral-400 ${
                     openFaq === index ? "fa-minus" : "fa-plus"
                   }`}
                 ></i>
@@ -70,7 +70,7 @@ const FAQSection = () => {
                 }`}
                 data-testid={`faq-answer-${index}`}
               >
-                <p className="text-gray-600 px-6">{faq.answer}</p>
+                <p className="text-neutral-600 px-6">{faq.answer}</p>
               </div>
             </div>
           ))}
