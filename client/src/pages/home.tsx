@@ -843,11 +843,11 @@ const Home = () => {
                         <span>Presale Launch</span>
                       </li>
                       <li className="flex items-center space-x-2">
-                        <i className="fas fa-check text-pkl-green"></i>
+                        <i className="fas fa-circle text-gray-300"></i>
                         <span>Token Launch</span>
                       </li>
                       <li className="flex items-center space-x-2">
-                        <i className="fas fa-check text-pkl-green"></i>
+                        <i className="fas fa-circle text-gray-300"></i>
                         <span>MVP Release</span>
                       </li>
                       <li className="flex items-center space-x-2">
