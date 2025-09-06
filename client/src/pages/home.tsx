@@ -109,155 +109,19 @@ const Home = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-green-100 via-blue-50 to-yellow-50">
-        {/* Cartoony Background Pattern */}
-        <div className="absolute inset-0">
-          {/* Checkered floor pattern */}
-          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-gray-200 to-transparent opacity-30"
-               style={{
-                 backgroundImage: `repeating-linear-gradient(45deg, #f0f0f0 0, #f0f0f0 20px, #e0e0e0 20px, #e0e0e0 40px)`
-               }}>
-          </div>
-        </div>
+      <section className="hero-gradient relative overflow-hidden min-h-screen flex items-center">
+        <div className="absolute inset-0 bg-gradient-to-br from-pkl-green/20 to-transparent"></div>
         
-        {/* Cartoon Pickle Characters */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Left Pickle Character */}
-          <div className="absolute top-32 left-10 floating-element" style={{animationDelay: '0s'}}>
-            <div className="relative">
-              {/* Pickle Body */}
-              <div className="w-20 h-32 bg-gradient-to-b from-pkl-green to-green-600 rounded-full relative shadow-lg">
-                {/* Pickle texture bumps */}
-                <div className="absolute top-2 left-2 w-3 h-3 bg-green-700 rounded-full opacity-40"></div>
-                <div className="absolute top-6 right-3 w-2 h-2 bg-green-700 rounded-full opacity-40"></div>
-                <div className="absolute bottom-6 left-3 w-2 h-2 bg-green-700 rounded-full opacity-40"></div>
-                <div className="absolute bottom-2 right-2 w-3 h-3 bg-green-700 rounded-full opacity-40"></div>
-              </div>
-              {/* Face */}
-              <div className="absolute top-6 left-1/2 transform -translate-x-1/2">
-                {/* Eyes */}
-                <div className="flex space-x-3 mb-2">
-                  <div className="w-4 h-4 bg-white rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
-                  </div>
-                  <div className="w-4 h-4 bg-white rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
-                  </div>
-                </div>
-                {/* Smile */}
-                <div className="w-6 h-3 border-b-2 border-black rounded-full"></div>
-              </div>
-              {/* Arms */}
-              <div className="absolute top-12 -left-4 w-8 h-3 bg-pkl-green rounded-full transform -rotate-45"></div>
-              <div className="absolute top-12 -right-4 w-8 h-3 bg-pkl-green rounded-full transform rotate-45"></div>
-              {/* Legs */}
-              <div className="absolute -bottom-4 left-2 w-3 h-8 bg-pkl-green rounded-full"></div>
-              <div className="absolute -bottom-4 right-2 w-3 h-8 bg-pkl-green rounded-full"></div>
-            </div>
-          </div>
-
-          {/* Right Pickle Character */}
-          <div className="absolute top-40 right-20 floating-element" style={{animationDelay: '2s'}}>
-            <div className="relative">
-              {/* Pickle Body */}
-              <div className="w-16 h-28 bg-gradient-to-b from-pkl-green to-green-600 rounded-full relative shadow-lg">
-                {/* Pickle texture bumps */}
-                <div className="absolute top-1 left-1 w-2 h-2 bg-green-700 rounded-full opacity-40"></div>
-                <div className="absolute top-5 right-2 w-2 h-2 bg-green-700 rounded-full opacity-40"></div>
-                <div className="absolute bottom-4 left-2 w-2 h-2 bg-green-700 rounded-full opacity-40"></div>
-              </div>
-              {/* Face */}
-              <div className="absolute top-5 left-1/2 transform -translate-x-1/2">
-                {/* Eyes */}
-                <div className="flex space-x-2 mb-1">
-                  <div className="w-3 h-3 bg-white rounded-full flex items-center justify-center">
-                    <div className="w-1 h-1 bg-black rounded-full"></div>
-                  </div>
-                  <div className="w-3 h-3 bg-white rounded-full flex items-center justify-center">
-                    <div className="w-1 h-1 bg-black rounded-full"></div>
-                  </div>
-                </div>
-                {/* Smile */}
-                <div className="w-4 h-2 border-b-2 border-black rounded-full"></div>
-              </div>
-              {/* Arms waving */}
-              <div className="absolute top-10 -left-3 w-6 h-2 bg-pkl-green rounded-full transform -rotate-12"></div>
-              <div className="absolute top-8 -right-3 w-6 h-2 bg-pkl-green rounded-full transform rotate-45"></div>
-              {/* Legs */}
-              <div className="absolute -bottom-3 left-1 w-2 h-6 bg-pkl-green rounded-full"></div>
-              <div className="absolute -bottom-3 right-1 w-2 h-6 bg-pkl-green rounded-full"></div>
-            </div>
-          </div>
-
-          {/* Bottom Center Pickle with Paddle */}
-          <div className="absolute bottom-20 left-1/4 floating-element" style={{animationDelay: '4s'}}>
-            <div className="relative">
-              {/* Pickle Body */}
-              <div className="w-18 h-30 bg-gradient-to-b from-pkl-green to-green-600 rounded-full relative shadow-lg">
-                {/* Pickle texture bumps */}
-                <div className="absolute top-2 left-2 w-2 h-2 bg-green-700 rounded-full opacity-40"></div>
-                <div className="absolute top-6 right-2 w-2 h-2 bg-green-700 rounded-full opacity-40"></div>
-                <div className="absolute bottom-4 left-2 w-2 h-2 bg-green-700 rounded-full opacity-40"></div>
-              </div>
-              {/* Face */}
-              <div className="absolute top-4 left-1/2 transform -translate-x-1/2">
-                {/* Eyes */}
-                <div className="flex space-x-2 mb-1">
-                  <div className="w-3 h-3 bg-white rounded-full flex items-center justify-center">
-                    <div className="w-1 h-1 bg-black rounded-full"></div>
-                  </div>
-                  <div className="w-3 h-3 bg-white rounded-full flex items-center justify-center">
-                    <div className="w-1 h-1 bg-black rounded-full"></div>
-                  </div>
-                </div>
-                {/* Happy smile */}
-                <div className="w-4 h-2 border-b-2 border-black rounded-full"></div>
-              </div>
-              {/* Paddle in hand */}
-              <div className="absolute top-8 -right-6 transform rotate-12">
-                <div className="w-8 h-12 bg-yellow-400 rounded-full border-2 border-yellow-600"></div>
-                <div className="w-1 h-6 bg-yellow-800 mx-auto"></div>
-              </div>
-              {/* Left arm */}
-              <div className="absolute top-10 -left-3 w-6 h-2 bg-pkl-green rounded-full transform -rotate-12"></div>
-              {/* Legs */}
-              <div className="absolute -bottom-3 left-1 w-2 h-6 bg-pkl-green rounded-full"></div>
-              <div className="absolute -bottom-3 right-1 w-2 h-6 bg-pkl-green rounded-full"></div>
-            </div>
-          </div>
-
-          {/* Floating Pickleball */}
-          <div className="absolute top-1/4 right-1/3 floating-element" style={{animationDelay: '1s'}}>
-            <div className="w-12 h-12 bg-yellow-300 rounded-full border-4 border-yellow-400 shadow-lg relative">
-              {/* Pickleball holes */}
-              <div className="absolute top-1 left-2 w-2 h-2 bg-yellow-500 rounded-full"></div>
-              <div className="absolute top-3 right-2 w-2 h-2 bg-yellow-500 rounded-full"></div>
-              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-yellow-500 rounded-full"></div>
-            </div>
-          </div>
-
-          {/* Another Floating Pickleball */}
-          <div className="absolute top-3/4 left-2/3 floating-element" style={{animationDelay: '3s'}}>
-            <div className="w-10 h-10 bg-yellow-300 rounded-full border-3 border-yellow-400 shadow-lg relative">
-              {/* Pickleball holes */}
-              <div className="absolute top-1 left-1 w-1 h-1 bg-yellow-500 rounded-full"></div>
-              <div className="absolute top-2 right-1 w-1 h-1 bg-yellow-500 rounded-full"></div>
-              <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-yellow-500 rounded-full"></div>
-            </div>
-          </div>
-
-          {/* Cute Cloud */}
-          <div className="absolute top-16 right-1/4 floating-element opacity-80" style={{animationDelay: '5s'}}>
-            <div className="relative">
-              <div className="w-16 h-8 bg-white rounded-full shadow-sm"></div>
-              <div className="absolute -top-2 left-2 w-6 h-6 bg-white rounded-full"></div>
-              <div className="absolute -top-1 right-3 w-4 h-4 bg-white rounded-full"></div>
-            </div>
-          </div>
+        {/* Floating Elements */}
+        <div className="absolute top-20 left-10 floating-element opacity-30">
+          <div className="w-20 h-20 bg-white/20 rounded-full backdrop-blur-sm"></div>
         </div>
-        
-        {/* Subtle overlay for text readability */}
-        <div className="absolute inset-0 bg-white/10"></div>
+        <div className="absolute top-40 right-20 floating-element opacity-40" style={{animationDelay: '2s'}}>
+          <div className="w-16 h-16 bg-pkl-yellow/30 rounded-xl backdrop-blur-sm"></div>
+        </div>
+        <div className="absolute bottom-32 left-1/4 floating-element opacity-25" style={{animationDelay: '4s'}}>
+          <div className="w-24 h-24 bg-white/15 rounded-2xl backdrop-blur-sm"></div>
+        </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
