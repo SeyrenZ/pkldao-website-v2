@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ConnectWallet from "./ConnectWallet";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -70,12 +71,7 @@ const Navbar = () => {
             >
               FAQ
             </a>
-            <button
-              className="bg-pkl-green rounded-xl text-white px-6 h-12 py-2 hover:bg-green-600 transition-colors font-fredoka font-bold tracking-widest"
-              data-testid="button-connect-wallet"
-            >
-              Connect Wallet
-            </button>
+            <ConnectWallet />
           </div>
           <button
             className="lg:hidden p-3 hover:bg-gray-100 rounded-md transition-colors relative z-40"

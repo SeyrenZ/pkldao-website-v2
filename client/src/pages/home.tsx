@@ -12,6 +12,7 @@ import HowToBuy from "@/components/HowToBuy";
 import CardSection from "@/components/CardSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
+import ConnectWallet from "@/components/ConnectWallet";
 
 const Home = () => {
   const isMobile = useIsMobile();
@@ -34,19 +35,14 @@ const Home = () => {
       {/* Mobile Sticky CTA */}
       {isMobile && (
         <div className="sticky-mobile-cta fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-lg z-50">
-          <div className="flex space-x-3">
+          <div className="flex items-center gap-3">
             <button
               className="flex-1 bg-pkl-transparent border-pkl-green border-2 text-pkl-green py-3 rounded-xl font-semibold hover:bg-green-600 hover:text-white transition-colors"
               data-testid="button-mobile-buy-pkl"
             >
               Buy $PKL
             </button>
-            <button
-              className="flex-1 bg-pkl-green text-white py-3 rounded-xl font-semibold hover:bg-green-600 transition-colors"
-              data-testid="button-mobile-connect-wallet"
-            >
-              Connect Wallet
-            </button>
+            <ConnectWallet />
           </div>
         </div>
       )}
