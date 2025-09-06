@@ -21,12 +21,12 @@ const Navbar = () => {
         } sm:px-6 lg:px-8 relative z-[60]`}
       >
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-2">
+          <a href="#" className="flex items-center space-x-2">
             <img src="/logo.svg" alt="PKL.CLUB" className="w-10 h-10" />
             <span className="text-xl font-bold text-pkl-green font-luckiest-guy tracking-widest">
               PKL.CLUB
             </span>
-          </div>
+          </a>
           <div className="hidden lg:flex items-center space-x-8 font-fredoka font-medium">
             <a
               href="#benefits"
