@@ -3,7 +3,7 @@ import React from "react";
 // Reusable components
 const FeatureItem = ({ icon, text }: { icon: string; text: string }) => (
   <div className="flex items-center space-x-3">
-    <div className="w-10 h-10 bg-pkl-yellow rounded-full flex items-center justify-center">
+    <div className="min-w-10 min-h-10 bg-pkl-yellow rounded-full flex items-center justify-center">
       <i className={`fas fa-${icon} text-neutral-800/90 text-lg`}></i>
     </div>
     <span className="text-lg">{text}</span>
