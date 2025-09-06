@@ -1,0 +1,11 @@
+[build]
+  # Build command for the frontend only
+  command = "npm run build:frontend"
+  # Publish directory where the built files are located
+  publish = "dist/public"
+
+# Redirect all routes to index.html for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
