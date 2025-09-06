@@ -114,7 +114,8 @@ const HeroSection = () => {
                   "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 3px 5px 0px rgba(0, 0, 0, 0.2)",
               }}
             >
-              The PKL Token is Coming Soon!
+              The PKL Token is{" "}
+              <span className="text-pkl-yellow ">Coming Soon!</span>
             </h2>
             <p className="text-xl text-white leading-relaxed font-fredoka ">
               Join the revolution in decentralized sports communities. The
@@ -153,129 +154,120 @@ const HeroSection = () => {
           </div>
 
           {/* Right Presale Box */}
-          <div className="lg:sticky lg:top-24 presale-box">
-            <div className="bg-gray-900 rounded-2xl p-6 shadow-2xl max-w-md mx-auto">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  Buy $PKL Token in Presale Now!
-                </h3>
-                <div className="flex justify-center space-x-1 mb-4">
-                  <div className="w-2 h-2 bg-pkl-yellow rounded-full animate-pulse"></div>
-                  <div
-                    className="w-2 h-2 bg-pkl-yellow rounded-full animate-pulse"
-                    style={{ animationDelay: "0.2s" }}
-                  ></div>
-                  <div
-                    className="w-2 h-2 bg-pkl-yellow rounded-full animate-pulse"
-                    style={{ animationDelay: "0.4s" }}
-                  ></div>
-                </div>
-              </div>
 
-              {/* Countdown Timer */}
-              <div className="grid grid-cols-4 gap-2 mb-6">
-                <div className="countdown-item bg-white/10 rounded-lg p-3 text-center">
-                  <div
-                    className="text-2xl font-bold text-white"
-                    data-testid="countdown-days"
-                  >
-                    {String(countdownTime.days).padStart(2, "0")}
-                  </div>
-                  <div className="text-xs text-gray-300">Days</div>
-                </div>
-                <div className="countdown-item bg-white/10 rounded-lg p-3 text-center">
-                  <div
-                    className="text-2xl font-bold text-white"
-                    data-testid="countdown-hours"
-                  >
-                    {String(countdownTime.hours).padStart(2, "0")}
-                  </div>
-                  <div className="text-xs text-gray-300">Hours</div>
-                </div>
-                <div className="countdown-item bg-white/10 rounded-lg p-3 text-center">
-                  <div
-                    className="text-2xl font-bold text-white"
-                    data-testid="countdown-minutes"
-                  >
-                    {String(countdownTime.minutes).padStart(2, "0")}
-                  </div>
-                  <div className="text-xs text-gray-300">Minutes</div>
-                </div>
-                <div className="countdown-item bg-white/10 rounded-lg p-3 text-center">
-                  <div
-                    className="text-2xl font-bold text-white"
-                    data-testid="countdown-seconds"
-                  >
-                    {String(countdownTime.seconds).padStart(2, "0")}
-                  </div>
-                  <div className="text-xs text-gray-300">Seconds</div>
-                </div>
+          <div className="w-full bg-[#1e1e1e] bg-opacity-80 rounded-[40px] px-8 py-6 shadow-2xl max-w-md">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-pkl-yellow mb-2 font-fredoka tracking-widest">
+                Buy $PKL Token <br />
+                <span className="text-white">in Presale Now!</span>
+              </h3>
+              <div className="flex justify-center space-x-1 mb-4">
+                <div className="w-2 h-2 bg-pkl-yellow rounded-full animate-pulse"></div>
+                <div
+                  className="w-2 h-2 bg-pkl-yellow rounded-full animate-pulse"
+                  style={{ animationDelay: "0.2s" }}
+                ></div>
+                <div
+                  className="w-2 h-2 bg-pkl-yellow rounded-full animate-pulse"
+                  style={{ animationDelay: "0.4s" }}
+                ></div>
               </div>
+            </div>
 
-              {/* Progress Bar */}
-              <div className="mb-6">
-                <div className="text-center text-white text-sm mb-2">
-                  UNTIL PRICE INCREASE
-                </div>
-                <div className="bg-gray-700 rounded-full h-3 overflow-hidden">
-                  <div
-                    className="progress-bar h-full rounded-full"
-                    style={{ width: `${presaleStats.progress}%` }}
-                  ></div>
-                </div>
-              </div>
-
-              {/* Stats */}
-              <div className="text-center mb-6 space-y-2">
-                <div className="text-white">
-                  <span className="text-sm text-gray-300">
-                    TOTAL USD RAISED:{" "}
-                  </span>
-                  <span className="font-bold" data-testid="text-total-raised">
-                    $
-                    {presaleStats.totalRaised.toLocaleString("en-US", {
-                      minimumFractionDigits: 2,
-                      maximumFractionDigits: 2,
-                    })}
-                  </span>
-                </div>
-                <div className="text-white">
-                  <span className="text-sm text-gray-300">1 $PKL = </span>
-                  <span className="font-bold" data-testid="text-current-price">
-                    ${presaleStats.currentPrice.toFixed(3)}
-                  </span>
-                </div>
-              </div>
-
-              {/* CTA Buttons */}
-              <div className="space-y-3">
-                <button
-                  className="w-full bg-pkl-green text-white py-4 rounded-xl font-semibold text-lg hover:bg-green-600 transition-colors"
-                  data-testid="button-buy-card"
+            {/* Countdown Timer */}
+            <div className="grid grid-cols-4 gap-2 mb-6">
+              {[
+                { key: "days", value: countdownTime.days, label: "Days" },
+                { key: "hours", value: countdownTime.hours, label: "Hours" },
+                {
+                  key: "minutes",
+                  value: countdownTime.minutes,
+                  label: "Minutes",
+                },
+                {
+                  key: "seconds",
+                  value: countdownTime.seconds,
+                  label: "Seconds",
+                },
+              ].map(({ key, value, label }) => (
+                <div
+                  key={key}
+                  className="countdown-item bg-white rounded-xl p-3 text-center font-fredoka"
                 >
-                  Buy With Card
-                </button>
-                <button
-                  className="w-full bg-pkl-orange text-white py-4 rounded-xl font-semibold text-lg hover:bg-red-600 transition-colors"
-                  data-testid="button-buy-crypto"
-                >
-                  Buy With Crypto
-                </button>
-              </div>
+                  <div
+                    className="text-2xl font-bold text-neutral-900"
+                    data-testid={`countdown-${key}`}
+                  >
+                    {String(value).padStart(2, "0")}
+                  </div>
+                  <div className="text-sm font-medium text-neurtral-900">
+                    {label}
+                  </div>
+                </div>
+              ))}
+            </div>
 
-              <div className="text-center mt-4">
-                <a
-                  href="#"
-                  className="text-pkl-yellow text-sm hover:underline"
-                  data-testid="link-wallet-guide"
-                >
-                  Don't have a wallet?
-                </a>
+            {/* Progress Bar */}
+            <div className="mb-2 font-fredoka font-semibold tracking-wide">
+              <div className="text-center text-white text-sm mb-2">
+                UNTIL PRICE INCREASE
               </div>
+              <div className="bg-white rounded-full h-3 overflow-hidden">
+                <div
+                  className="bg-pkl-green h-full rounded-full"
+                  style={{ width: `${presaleStats.progress}%` }}
+                ></div>
+              </div>
+            </div>
 
-              <div className="text-center mt-4 text-xs text-gray-400">
-                Ethereum-based • Secure • Instant utility
+            {/* Stats */}
+            <div className="text-center mb-6 space-y-2 font-fredoka tracking-widest">
+              <div className="text-white">
+                <span className="text-sm font-medium text-gray-300">
+                  TOTAL USD RAISED:{" "}
+                </span>
+                <span className="font-bold" data-testid="text-total-raised">
+                  $
+                  {presaleStats.totalRaised.toLocaleString("en-US", {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })}
+                </span>
               </div>
+              <div className="text-white">
+                <span className="text-sm text-gray-300 font-medium">
+                  1 $PKL ={" "}
+                </span>
+                <span className="font-bold" data-testid="text-current-price">
+                  ${presaleStats.currentPrice.toFixed(3)}
+                </span>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="space-y-3 font-fredoka">
+              <button
+                className="w-full bg-pkl-green text-white py-4 rounded-xl font-semibold text-lg hover:bg-green-600 transition-colors"
+                data-testid="button-buy-card"
+              >
+                Buy With Card
+              </button>
+              <button
+                className="w-full bg-pkl-yellow text-neutral-900 py-4 rounded-xl font-semibold text-lg hover:bg-pkl-yellow/50 transition-colors"
+                data-testid="button-buy-crypto"
+              >
+                Buy With Crypto
+              </button>
+            </div>
+
+            <div className="text-center mt-4 font-fredoka uppercase font-medium underline">
+              <a
+                href="#"
+                className="text-pkl-yellow text-sm hover:underline"
+                data-testid="link-wallet-guide"
+              >
+                Don't have a wallet?
+              </a>
             </div>
           </div>
         </div>
