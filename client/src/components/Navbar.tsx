@@ -22,7 +22,7 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center h-16">
           <a href="#" className="flex items-center space-x-2">
-            <img src="/logo.svg" alt="PKL.CLUB" className="w-10 h-10" />
+            <img src="/logo.png" alt="PKL.CLUB" className="w-10 h-10" />
             <span className="text-xl font-bold text-pkl-green font-luckiest-guy tracking-widest">
               PKL.CLUB
             </span>

@@ -110,7 +110,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img src="/logo.svg" alt="PKL.CLUB" className="w-10 h-10" />
+              <img src="/logo.png" alt="PKL.CLUB" className="w-10 h-10" />
               <span className="text-xl font-bold font-luckiest-guy tracking-widest text-pkl-green">
                 PKL.CLUB
               </span>
