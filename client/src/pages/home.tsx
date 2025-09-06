@@ -68,7 +68,7 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-pkl-white min-h-screen pb-14 sm:pb-0">
+    <div className="bg-pkl-white min-h-screen pb-14 sm:pb-0 overflow-hidden">
       <Navbar />
       <HeroSection />
       <BuyPKL />
@@ -87,13 +87,13 @@ const Home = () => {
         <div className="sticky-mobile-cta fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-lg z-50">
           <div className="flex space-x-3">
             <button
-              className="flex-1 bg-pkl-green text-white py-3 rounded-xl font-semibold hover:bg-green-600 transition-colors"
+              className="flex-1 bg-pkl-transparent border-pkl-green border-2 text-pkl-green py-3 rounded-xl font-semibold hover:bg-green-600 hover:text-white transition-colors"
               data-testid="button-mobile-buy-pkl"
             >
               Buy $PKL
             </button>
             <button
-              className="flex-1 bg-pkl-orange text-white py-3 rounded-xl font-semibold hover:bg-red-600 transition-colors"
+              className="flex-1 bg-pkl-green text-white py-3 rounded-xl font-semibold hover:bg-green-600 transition-colors"
               data-testid="button-mobile-connect-wallet"
             >
               Connect Wallet
