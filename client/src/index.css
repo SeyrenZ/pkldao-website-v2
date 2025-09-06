@@ -59,10 +59,10 @@
   --spacing: 0.25rem;
 
   /* PKL Custom Colors */
-  --pkl-green: hsl(148, 100%, 33%);
-  --pkl-yellow: hsl(79, 93%, 63%);
-  --pkl-white: hsl(20, 14%, 93%);
-  --pkl-orange: hsl(11, 88%, 58%);
+  --pkl-green: #00a86b;
+  --pkl-yellow: #c4f000;
+  --pkl-white: #eee8e8;
+  --pkl-orange: #ff533e;
 }
 
 .dark {
@@ -117,10 +117,10 @@
   --shadow-2xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0);
 
   /* PKL Custom Colors for Dark Mode */
-  --pkl-green: hsl(148, 100%, 33%);
-  --pkl-yellow: hsl(79, 93%, 63%);
-  --pkl-white: hsl(20, 14%, 10%);
-  --pkl-orange: hsl(11, 88%, 58%);
+  --pkl-green: #00a86b;
+  --pkl-yellow: #c4f000;
+  --pkl-white: #2a2a2a;
+  --pkl-orange: #ff533e;
   --spacing: 0.25rem;
   --tracking-normal: 0em;
 }

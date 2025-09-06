@@ -2,16 +2,16 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <nav className="w-full bg-white shadow-sm border-b border-border rounded-b-2xl fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-pkl-green rounded-xl flex items-center justify-center">
-              <i className="fas fa-table-tennis-paddle-ball text-white text-lg"></i>
-            </div>
-            <span className="text-xl font-bold text-gray-900">PKL.CLUB</span>
+            <img src="/logo.svg" alt="PKL.CLUB" className="w-10 h-10" />
+            <span className="text-xl font-bold text-pkl-green font-luckiest-guy tracking-widest">
+              PKL.CLUB
+            </span>
           </div>
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 font-fredoka font-medium">
             <a
               href="#benefits"
               className="text-gray-600 hover:text-pkl-green transition-colors"
@@ -55,7 +55,7 @@ const Navbar = () => {
               FAQ
             </a>
             <button
-              className="bg-pkl-green text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
+              className="bg-pkl-green rounded-xl text-white px-6 h-12 py-2 hover:bg-green-600 transition-colors font-fredoka font-bold tracking-widest"
               data-testid="button-connect-wallet"
             >
               Connect Wallet

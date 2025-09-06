@@ -47,7 +47,31 @@ const HeroSection = () => {
     return () => clearInterval(timer);
   }, []);
   return (
-    <section className="hero-gradient relative overflow-hidden py-28 flex items-center">
+    <section className="hero-gradient relative overflow-hidden pb-24 pt-32 flex items-center">
+      <img
+        src="/corner-circle.svg"
+        alt="bg"
+        className="absolute bottom-0 left-0 lg:w-[200px] lg:h-[200px] md:w-[150px] md:h-[150px] w-[80px] h-[80px] animate-fade-up-right"
+        style={{ animationDelay: "100ms" }}
+      />
+      <img
+        src="/corner-circle-top-right.svg"
+        alt="bg"
+        className="absolute top-0 right-0 lg:w-[200px] lg:h-[200px] sm:w-[150px] sm:h-[150px] hidden sm:block animate-fade-down-left"
+        style={{ animationDelay: "200ms" }}
+      />
+      <img
+        src="/corner-circle-bottom-right.svg"
+        alt="bg"
+        className="absolute bottom-0 right-0 lg:w-[130px] lg:h-[130px] md:w-[80px] md:h-[80px] w-[50px] h-[50px] animate-fade-up-left"
+        style={{ animationDelay: "300ms" }}
+      />
+      <img
+        src="/circle-left.svg"
+        alt="bg"
+        className="absolute left-0 bottom-0 top-0 my-auto hidden sm:block animate-fade-right"
+        style={{ animationDelay: "400ms" }}
+      />
       <div className="absolute inset-0 bg-gradient-to-br from-pkl-green/20 to-transparent"></div>
 
       {/* Floating Elements */}
@@ -67,26 +91,38 @@ const HeroSection = () => {
         <div className="w-24 h-24 bg-white/15 rounded-2xl backdrop-blur-sm"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="w-full relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="w-full flex lg:flex-row flex-col gap-12 items-center justify-between">
           {/* Left Content */}
-          <div className="text-white space-y-8">
-            <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+          <div className="text-white space-y-8 max-w-2xl">
+            <h1
+              className="text-5xl lg:text-6xl font-bold leading-tight font-luckiest-guy tracking-widest"
+              style={{
+                textShadow:
+                  "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 4px 6px 0px rgba(0, 0, 0, 0.2)",
+              }}
+            >
               World's First
-              <span className="text-pkl-yellow"> Decentralized</span>
+              <span className="text-pkl-yellow "> Decentralized</span>
               <br />
               Pickleball Community
             </h1>
-            <h2 className="text-2xl lg:text-3xl font-semibold">
+            <h2
+              className="text-2xl lg:text-3xl font-semibold font-fredoka"
+              style={{
+                textShadow:
+                  "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 3px 5px 0px rgba(0, 0, 0, 0.2)",
+              }}
+            >
               The PKL Token is Coming Soon!
             </h2>
-            <p className="text-xl text-white/90 leading-relaxed">
+            <p className="text-xl text-white leading-relaxed font-fredoka ">
               Join the revolution in decentralized sports communities. The
               future of Pickleball is almost here!
             </p>
 
             {/* Benefits List */}
-            <div className="space-y-4">
+            <div className="space-y-4 font-fredoka">
               <div className="flex items-center space-x-3">
                 <div className="w-6 h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
                   <i className="fas fa-check text-pkl-green text-sm"></i>
