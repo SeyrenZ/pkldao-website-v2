@@ -1122,24 +1122,24 @@ const Home = () => {
             {/* Left: Card Visual */}
             <div className="relative">
               <div className="perspective-1000">
-                <div className="card-3d bg-gradient-to-br from-pkl-green to-green-600 rounded-2xl p-8 shadow-2xl transform hover:rotate-y-6 transition-transform duration-500" data-testid="pkl-card-visual">
+                <div className="card-3d bg-gradient-to-br from-pkl-green to-green-600 rounded-2xl p-6 shadow-2xl transform hover:rotate-y-6 transition-transform duration-500 w-80 h-48" data-testid="pkl-card-visual">
                   {/* Card Background Pattern */}
                   <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-2xl"></div>
                   <div className="absolute top-4 right-4 w-16 h-16 bg-white/20 rounded-full blur-2xl"></div>
                   <div className="absolute bottom-8 left-8 w-12 h-12 bg-pkl-yellow/30 rounded-xl blur-xl"></div>
                   
-                  <div className="relative z-10 h-56">
+                  <div className="relative z-10 h-40">
                     {/* VISA Logo */}
-                    <div className="flex justify-between items-start mb-8">
+                    <div className="flex justify-between items-start mb-4">
                       <div className="text-white font-bold text-lg">PKL.CLUB</div>
                       <div className="text-white font-bold text-xl italic">VISA</div>
                     </div>
                     
                     {/* Chip */}
-                    <div className="w-12 h-9 bg-gold rounded-lg mb-8 bg-gradient-to-br from-yellow-200 to-yellow-400"></div>
+                    <div className="w-10 h-7 bg-gold rounded-lg mb-4 bg-gradient-to-br from-yellow-200 to-yellow-400"></div>
                     
                     {/* Card Number */}
-                    <div className="text-white font-mono text-xl mb-6 tracking-wider">
+                    <div className="text-white font-mono text-lg mb-3 tracking-wider">
                       •••• •••• •••• 2024
                     </div>
                     
