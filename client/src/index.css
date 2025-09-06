@@ -163,6 +163,24 @@
     bottom: 0;
   }
 
+  /* PKL Card 3D Effects */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .card-3d {
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+
+  .card-3d:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+  }
+
+  .bg-gold {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e  100%);
+  }
+
   .accordion-content {
     transition: max-height 0.3s ease;
   }
