@@ -35,10 +35,16 @@ const FAQSection = () => {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-white">
+    <section id="faq" className="py-20 hero-gradient">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800/90 mb-6">
+          <h2
+            className="text-4xl lg:text-5xl font-bold text-white mb-6 font-luckiest-guy tracking-widest"
+            style={{
+              textShadow:
+                "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 4px 6px 0px rgba(0, 0, 0, 0.2)",
+            }}
+          >
             Frequently Asked Questions
           </h2>
         </div>
@@ -47,7 +53,7 @@ const FAQSection = () => {
           {faqData.map((faq, index) => (
             <div
               key={index}
-              className="border border-gray-200 rounded-2xl overflow-hidden"
+              className="bg-white rounded-2xl overflow-hidden"
               data-testid={`faq-item-${index}`}
             >
               <button
