@@ -1,5 +1,6 @@
 import { useIsMobile } from "@/hooks/use-mobile";
 import React, { useEffect, useState } from "react";
+import PresaleBox from "./PresaleBox";
 
 const HeroSection = () => {
   const [countdownTime, setCountdownTime] = useState({
@@ -47,7 +48,7 @@ const HeroSection = () => {
     return () => clearInterval(timer);
   }, []);
   return (
-    <section className="hero-gradient relative overflow-hidden pb-24 pt-32 flex items-center">
+    <section className="sm:hero-gradient bg-pkl-green relative overflow-hidden pb-24 lg:pt-32 sm:pt-20 pt-14 flex items-center">
       <img
         src="/corner-circle.svg"
         alt="bg"
@@ -94,9 +95,9 @@ const HeroSection = () => {
       <div className="w-full relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="w-full flex lg:flex-row flex-col gap-12 items-center justify-between">
           {/* Left Content */}
-          <div className="text-white space-y-8 max-w-2xl">
+          <div className="text-white sm:space-y-8 space-y-4 max-w-2xl ">
             <h1
-              className="text-5xl lg:text-6xl font-bold leading-tight font-luckiest-guy tracking-widest"
+              className="text-4xl lg:text-6xl font-bold leading-tight font-luckiest-guy tracking-widest text-center sm:text-left"
               style={{
                 textShadow:
                   "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 4px 6px 0px rgba(0, 0, 0, 0.2)",
@@ -108,7 +109,7 @@ const HeroSection = () => {
               Pickleball Community
             </h1>
             <h2
-              className="text-2xl lg:text-3xl font-semibold font-fredoka"
+              className="text-xl lg:text-3xl font-semibold font-fredoka text-center sm:text-left"
               style={{
                 textShadow:
                   "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 3px 5px 0px rgba(0, 0, 0, 0.2)",
@@ -117,7 +118,10 @@ const HeroSection = () => {
               The PKL Token is{" "}
               <span className="text-pkl-yellow ">Coming Soon!</span>
             </h2>
-            <p className="text-xl text-white leading-relaxed font-fredoka ">
+            <div className="sm:hidden py-4">
+              <PresaleBox />
+            </div>
+            <p className="text-lgsm:text-xl text-white leading-relaxed font-fredoka text-center sm:text-left">
               Join the revolution in decentralized sports communities. The
               future of Pickleball is almost here!
             </p>
@@ -125,28 +129,28 @@ const HeroSection = () => {
             {/* Benefits List */}
             <div className="space-y-4 font-fredoka">
               <div className="flex items-center space-x-3">
-                <div className="w-6 h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
+                <div className="min-w-6 min-h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
                   <i className="fas fa-check text-pkl-green text-sm"></i>
                 </div>
-                <span className="text-lg">
+                <span className="sm:text-lg">
                   Play & Earn: climb leaderboards, win rewards, unlock
                   collectibles.
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-6 h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
+                <div className="min-w-6 min-h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
                   <i className="fas fa-check text-pkl-green text-sm"></i>
                 </div>
-                <span className="text-lg">
+                <span className="sm:text-lg">
                   All-in-One Platform: profiles, marketplace, messaging, and
                   events.
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-6 h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
+                <div className="min-w-6 min-h-6 bg-pkl-yellow rounded-full flex items-center justify-center">
                   <i className="fas fa-check text-pkl-green text-sm"></i>
                 </div>
-                <span className="text-lg">
+                <span className="sm:text-lg">
                   Real Utility: pay for gear, tickets, and prizes with $PKL.
                 </span>
               </div>
@@ -154,121 +158,8 @@ const HeroSection = () => {
           </div>
 
           {/* Right Presale Box */}
-
-          <div className="w-full bg-[#1e1e1e] bg-opacity-80 rounded-[40px] px-8 py-6 shadow-2xl max-w-md">
-            <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-pkl-yellow mb-2 font-fredoka tracking-widest">
-                Buy $PKL Token <br />
-                <span className="text-white">in Presale Now!</span>
-              </h3>
-              <div className="flex justify-center space-x-1 mb-4">
-                <div className="w-2 h-2 bg-pkl-yellow rounded-full animate-pulse"></div>
-                <div
-                  className="w-2 h-2 bg-pkl-yellow rounded-full animate-pulse"
-                  style={{ animationDelay: "0.2s" }}
-                ></div>
-                <div
-                  className="w-2 h-2 bg-pkl-yellow rounded-full animate-pulse"
-                  style={{ animationDelay: "0.4s" }}
-                ></div>
-              </div>
-            </div>
-
-            {/* Countdown Timer */}
-            <div className="grid grid-cols-4 gap-2 mb-6">
-              {[
-                { key: "days", value: countdownTime.days, label: "Days" },
-                { key: "hours", value: countdownTime.hours, label: "Hours" },
-                {
-                  key: "minutes",
-                  value: countdownTime.minutes,
-                  label: "Minutes",
-                },
-                {
-                  key: "seconds",
-                  value: countdownTime.seconds,
-                  label: "Seconds",
-                },
-              ].map(({ key, value, label }) => (
-                <div
-                  key={key}
-                  className="countdown-item bg-white rounded-xl p-3 text-center font-fredoka"
-                >
-                  <div
-                    className="text-2xl font-bold text-neutral-800/90"
-                    data-testid={`countdown-${key}`}
-                  >
-                    {String(value).padStart(2, "0")}
-                  </div>
-                  <div className="text-sm font-medium text-neurtral-900">
-                    {label}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Progress Bar */}
-            <div className="mb-2 font-fredoka font-semibold tracking-wide">
-              <div className="text-center text-white text-sm mb-2">
-                UNTIL PRICE INCREASE
-              </div>
-              <div className="bg-white rounded-full h-3 overflow-hidden">
-                <div
-                  className="bg-pkl-green h-full rounded-full"
-                  style={{ width: `${presaleStats.progress}%` }}
-                ></div>
-              </div>
-            </div>
-
-            {/* Stats */}
-            <div className="text-center mb-6 space-y-2 font-fredoka tracking-widest">
-              <div className="text-white">
-                <span className="text-sm font-medium text-neutral-300">
-                  TOTAL USD RAISED:{" "}
-                </span>
-                <span className="font-bold" data-testid="text-total-raised">
-                  $
-                  {presaleStats.totalRaised.toLocaleString("en-US", {
-                    minimumFractionDigits: 2,
-                    maximumFractionDigits: 2,
-                  })}
-                </span>
-              </div>
-              <div className="text-white">
-                <span className="text-sm text-neutral-300 font-medium">
-                  1 $PKL ={" "}
-                </span>
-                <span className="font-bold" data-testid="text-current-price">
-                  ${presaleStats.currentPrice.toFixed(3)}
-                </span>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="space-y-3 font-fredoka">
-              <button
-                className="w-full bg-pkl-green text-white py-4 rounded-xl font-semibold text-lg hover:bg-green-600 transition-colors"
-                data-testid="button-buy-card"
-              >
-                Buy With Card
-              </button>
-              <button
-                className="w-full bg-pkl-yellow text-neutral-800/90 py-4 rounded-xl font-semibold text-lg hover:bg-pkl-yellow/50 transition-colors"
-                data-testid="button-buy-crypto"
-              >
-                Buy With Crypto
-              </button>
-            </div>
-
-            <div className="text-center mt-4 font-fredoka uppercase font-medium underline">
-              <a
-                href="#"
-                className="text-pkl-yellow text-sm hover:underline"
-                data-testid="link-wallet-guide"
-              >
-                Don't have a wallet?
-              </a>
-            </div>
+          <div className="sm:block hidden">
+            <PresaleBox />
           </div>
         </div>
       </div>

@@ -71,16 +71,16 @@ const Home = () => {
     <div className="bg-pkl-white min-h-screen">
       <Navbar />
       <HeroSection />
-      <BuyPKL />
-      <PKLProfileSection />
-      <Ecosystem />
-      <KeyFeatures />
-      <Tokenomics />
-      <Roadmap />
-      <HowToBuy />
-      <CardSection />
-      <FAQSection />
-      <Footer />
+      {/* <BuyPKL /> */}
+      {/* <PKLProfileSection /> */}
+      {/* <Ecosystem /> */}
+      {/* <KeyFeatures /> */}
+      {/* <Tokenomics /> */}
+      {/* <Roadmap /> */}
+      {/* <HowToBuy /> */}
+      {/* <CardSection /> */}
+      {/* <FAQSection /> */}
+      {/* <Footer /> */}
 
       {/* Mobile Sticky CTA */}
       {isMobile && (

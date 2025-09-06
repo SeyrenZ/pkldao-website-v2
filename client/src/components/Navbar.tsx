@@ -11,7 +11,7 @@ const Navbar = () => {
               PKL.CLUB
             </span>
           </div>
-          <div className="hidden md:flex items-center space-x-8 font-fredoka font-medium">
+          <div className="hidden lg:flex items-center space-x-8 font-fredoka font-medium">
             <a
               href="#benefits"
               className="text-neutral-600 hover:text-pkl-green transition-colors"
@@ -61,7 +61,7 @@ const Navbar = () => {
               Connect Wallet
             </button>
           </div>
-          <button className="md:hidden" data-testid="button-mobile-menu">
+          <button className="lg:hidden" data-testid="button-mobile-menu">
             <i className="fas fa-bars text-neutral-600"></i>
           </button>
         </div>
