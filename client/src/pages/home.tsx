@@ -14,58 +14,7 @@ import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 
 const Home = () => {
-  const [countdownTime, setCountdownTime] = useState({
-    days: 7,
-    hours: 14,
-    minutes: 28,
-    seconds: 42,
-  });
-
-  const [presaleStats, setPresaleStats] = useState({
-    totalRaised: 2847293.84,
-    currentPrice: 0.045,
-    progress: 75,
-  });
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [openStep, setOpenStep] = useState<number | null>(null);
   const isMobile = useIsMobile();
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCountdownTime((prev) => {
-        let { days, hours, minutes, seconds } = prev;
-
-        if (seconds > 0) {
-          seconds--;
-        } else if (minutes > 0) {
-          minutes--;
-          seconds = 59;
-        } else if (hours > 0) {
-          hours--;
-          minutes = 59;
-          seconds = 59;
-        } else if (days > 0) {
-          days--;
-          hours = 23;
-          minutes = 59;
-          seconds = 59;
-        }
-
-        return { days, hours, minutes, seconds };
-      });
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const toggleFaq = (index: number) => {
-    setOpenFaq(openFaq === index ? null : index);
-  };
-
-  const toggleStep = (index: number) => {
-    setOpenStep(openStep === index ? null : index);
-  };
 
   return (
     <div className="bg-pkl-white min-h-screen pb-14 sm:pb-0 overflow-hidden">
