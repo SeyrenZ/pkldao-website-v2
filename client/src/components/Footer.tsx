@@ -189,7 +189,7 @@ const Footer = () => {
         <div className="border-t border-zinc-300 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-neutral-800/90 text-sm">
-              © 2024 PKL.CLUB. All rights reserved.
+              © {new Date().getFullYear()} PKL.CLUB. All rights reserved.
             </p>
             <p className="text-neutral-600 text-sm text-center">
               PKL.CLUB is not investment advice. Cryptocurrency may be
