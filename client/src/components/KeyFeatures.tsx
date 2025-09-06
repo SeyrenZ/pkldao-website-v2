@@ -5,7 +5,7 @@ const KeyFeatures = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800/90 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800/90 mb-6 font-luckiest-guy tracking-widest">
             PKL.CLUB Key Features
           </h2>
         </div>
@@ -13,7 +13,7 @@ const KeyFeatures = () => {
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Feature 1 */}
           <div
-            className="bg-gradient-to-br from-pkl-green to-green-600 rounded-3xl p-8 text-white relative overflow-hidden"
+            className="bg-gradient-to-br from-pkl-green to-green-600 rounded-3xl p-8 text-white relative overflow-hidden shadow-lg"
             data-testid="card-feature-gamified"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
@@ -50,7 +50,7 @@ const KeyFeatures = () => {
 
           {/* Feature 2 */}
           <div
-            className="bg-gradient-to-br from-pkl-yellow to-yellow-500 rounded-3xl p-8 text-neutral-800/90 relative overflow-hidden"
+            className="bg-gradient-to-br from-pkl-yellow to-yellow-500 rounded-3xl p-8 text-neutral-800/90 relative overflow-hidden shadow-lg"
             data-testid="card-feature-community"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/20 rounded-full -mr-16 -mt-16"></div>
@@ -92,7 +92,7 @@ const KeyFeatures = () => {
 
           {/* Feature 3 */}
           <div
-            className="bg-gradient-to-br from-pkl-orange to-red-500 rounded-3xl p-8 text-white relative overflow-hidden"
+            className="bg-gradient-to-br from-pkl-orange to-red-500 rounded-3xl p-8 text-white relative overflow-hidden shadow-lg"
             data-testid="card-feature-marketplace"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>

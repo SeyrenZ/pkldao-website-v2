@@ -131,7 +131,7 @@
   }
 
   body {
-    @apply antialiased bg-background text-foreground;
+    @apply antialiased text-foreground;
     font-family: "Fredoka", sans-serif;
   }
 }

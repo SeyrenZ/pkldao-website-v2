@@ -21,34 +21,38 @@ const Roadmap = () => {
 
           {/* Phase Items */}
           <div className="space-y-24">
-            {/* Phase 1 */}
+            {/* Q4 2025 */}
             <div className="relative flex items-center">
               <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-pkl-green rounded-full border-4 border-white shadow-lg z-10"></div>
 
               <div className="w-1/2 pr-12">
                 <div
                   className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 ml-auto max-w-md"
-                  data-testid="roadmap-phase-1"
+                  data-testid="roadmap-q4-2025"
                 >
                   <h3 className="text-2xl font-bold text-neutral-800/90 mb-4">
-                    PHASE 1
+                    Q4 2025
                   </h3>
                   <ul className="space-y-2 text-neutral-600">
                     <li className="flex items-center space-x-2">
                       <i className="fas fa-check text-pkl-green"></i>
-                      <span>Presale Launch</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <i className="fas fa-circle text-neutral-300"></i>
-                      <span>Token Launch</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <i className="fas fa-circle text-neutral-300"></i>
-                      <span>MVP Release</span>
+                      <span>$PKL Presale is completed</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <i className="fas fa-check text-pkl-green"></i>
-                      <span>Core Community</span>
+                      <span>$PKL token listed on Uniswap</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <i className="fas fa-check text-pkl-green"></i>
+                      <span>PKL.CLUB platform MVP is unveiled</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <i className="fas fa-check text-pkl-green"></i>
+                      <span>PKL.Club team is formed</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <i className="fas fa-clock text-pkl-yellow"></i>
+                      <span>First PKL.CLUB event is announced</span>
                     </li>
                   </ul>
                 </div>
@@ -59,7 +63,7 @@ const Roadmap = () => {
               </div>
             </div>
 
-            {/* Phase 2 */}
+            {/* Q1 2026 */}
             <div className="relative flex items-center">
               <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-pkl-yellow rounded-full border-4 border-white shadow-lg z-10"></div>
 
@@ -70,61 +74,67 @@ const Roadmap = () => {
               <div className="w-1/2 pl-12">
                 <div
                   className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-md"
-                  data-testid="roadmap-phase-2"
+                  data-testid="roadmap-q1-2026"
                 >
                   <h3 className="text-2xl font-bold text-neutral-800/90 mb-4">
-                    PHASE 2
+                    Q1 2026
                   </h3>
                   <ul className="space-y-2 text-neutral-600">
                     <li className="flex items-center space-x-2">
                       <i className="fas fa-clock text-neutral-400"></i>
-                      <span>Platform V1</span>
+                      <span>
+                        Beta version of the PKL.CLUB platform is launched
+                      </span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <i className="fas fa-clock text-pkl-yellow"></i>
+                      <span>
+                        V1 includes profile, Play 4 Pickles and crypto wallet
+                      </span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <i className="fas fa-clock text-neutral-400"></i>
-                      <span>Player/Club Onboarding</span>
+                      <span>Major industry partners are signed</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <i className="fas fa-clock text-neutral-400"></i>
-                      <span>Events Calendar</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <i className="fas fa-clock text-neutral-400"></i>
-                      <span>Marketplace Launch</span>
+                      <span>PKL.CLUB CEO is hired</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            {/* Phase 3 */}
+            {/* Q2 2026 */}
             <div className="relative flex items-center">
               <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-pkl-orange rounded-full border-4 border-white shadow-lg z-10"></div>
 
               <div className="w-1/2 pr-12">
                 <div
                   className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 ml-auto max-w-md"
-                  data-testid="roadmap-phase-3"
+                  data-testid="roadmap-q2-2026"
                 >
                   <h3 className="text-2xl font-bold text-neutral-800/90 mb-4">
-                    PHASE 3
+                    Q2 2026
                   </h3>
                   <ul className="space-y-2 text-neutral-600">
                     <li className="flex items-center space-x-2">
                       <i className="fas fa-clock text-neutral-400"></i>
-                      <span>V2 with Advanced Profiles</span>
+                      <span>V2 of PKL.CLUB platform is released</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <i className="fas fa-clock text-neutral-400"></i>
-                      <span>Social Layer & Highlight Reels</span>
+                      <span>Player and Vendor onboarding</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <i className="fas fa-clock text-pkl-yellow"></i>
+                      <span>
+                        Mass marketing to the Pickleball industry begins
+                      </span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <i className="fas fa-clock text-neutral-400"></i>
-                      <span>VR Pickleball</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <i className="fas fa-clock text-neutral-400"></i>
-                      <span>Global Tournaments</span>
+                      <span>Schedule of PKL.CLUB events is released</span>
                     </li>
                   </ul>
                 </div>
@@ -135,7 +145,7 @@ const Roadmap = () => {
               </div>
             </div>
 
-            {/* Phase 4 */}
+            {/* Q3 2026 */}
             <div className="relative flex items-center">
               <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg z-10"></div>
 
@@ -146,27 +156,30 @@ const Roadmap = () => {
               <div className="w-1/2 pl-12">
                 <div
                   className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-md"
-                  data-testid="roadmap-phase-4"
+                  data-testid="roadmap-q3-2026"
                 >
                   <h3 className="text-2xl font-bold text-neutral-800/90 mb-4">
-                    PHASE 4
+                    Q3 2026
                   </h3>
                   <ul className="space-y-2 text-neutral-600">
                     <li className="flex items-center space-x-2">
                       <i className="fas fa-clock text-neutral-400"></i>
-                      <span>DAO Governance</span>
+                      <span>V3 of PKL.CLUB platform is released</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <i className="fas fa-clock text-neutral-400"></i>
-                      <span>Loans for Clubs/Players</span>
+                      <span>
+                        Play 4 Pickle global is added. Risk Pickles on any match
+                        globally
+                      </span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <i className="fas fa-clock text-pkl-yellow"></i>
+                      <span>VR pickleball partner is acquired</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <i className="fas fa-clock text-neutral-400"></i>
-                      <span>Global Expansion</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <i className="fas fa-clock text-neutral-400"></i>
-                      <span>Enterprise Solutions</span>
+                      <span>PKL lending is under development</span>
                     </li>
                   </ul>
                 </div>
