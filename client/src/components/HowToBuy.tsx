@@ -15,7 +15,7 @@ const HowToBuy = () => {
     <section className="py-20 bg-gradient-to-br from-blue-50 to-pkl-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
             How To Buy $PKL Token
           </h2>
           <p className="text-xl text-gray-600 mb-8">
@@ -56,7 +56,7 @@ const HowToBuy = () => {
                   <span className="text-xl font-bold text-white">1</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <h3 className="text-xl font-bold text-neutral-900">
                     Connect your wallet or register in PKL.CLUB
                   </h3>
                   <p className="text-gray-600">
@@ -93,10 +93,10 @@ const HowToBuy = () => {
             >
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-pkl-yellow rounded-xl flex items-center justify-center">
-                  <span className="text-xl font-bold text-gray-900">2</span>
+                  <span className="text-xl font-bold text-neutral-900">2</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <h3 className="text-xl font-bold text-neutral-900">
                     Choose your $PKL amount
                   </h3>
                   <p className="text-gray-600">Select your investment amount</p>
@@ -134,7 +134,7 @@ const HowToBuy = () => {
                   <span className="text-xl font-bold text-white">3</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <h3 className="text-xl font-bold text-neutral-900">
                     Buy with Card or Crypto
                   </h3>
                   <p className="text-gray-600">
@@ -174,7 +174,7 @@ const HowToBuy = () => {
                   <span className="text-xl font-bold text-white">4</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <h3 className="text-xl font-bold text-neutral-900">
                     Claim your tokens instantly
                   </h3>
                   <p className="text-gray-600">Start using $PKL immediately</p>

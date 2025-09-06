@@ -103,7 +103,7 @@ const PKLProfileSection = () => {
                   <i className="fas fa-user text-white text-2xl"></i>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900">
+                  <h3 className="text-2xl font-bold text-neutral-900">
                     Sarah Chen
                   </h3>
                   <div className="flex items-center space-x-2">
@@ -163,7 +163,7 @@ const PKLProfileSection = () => {
               {/* NFT Badges Showcase */}
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <div className="font-semibold text-gray-900">
+                  <div className="font-semibold text-neutral-900">
                     Achievement Badges
                   </div>
                   <div className="text-sm text-pkl-green">12 Earned</div>

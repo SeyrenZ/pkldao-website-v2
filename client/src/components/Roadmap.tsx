@@ -5,7 +5,7 @@ const Roadmap = () => {
     <section id="roadmap" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
             Roadmap
           </h2>
           <p className="text-xl text-gray-600">
@@ -30,7 +30,7 @@ const Roadmap = () => {
                   className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 ml-auto max-w-md"
                   data-testid="roadmap-phase-1"
                 >
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-2xl font-bold text-neutral-900 mb-4">
                     PHASE 1
                   </h3>
                   <ul className="space-y-2 text-gray-600">
@@ -72,7 +72,7 @@ const Roadmap = () => {
                   className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-md"
                   data-testid="roadmap-phase-2"
                 >
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-2xl font-bold text-neutral-900 mb-4">
                     PHASE 2
                   </h3>
                   <ul className="space-y-2 text-gray-600">
@@ -106,7 +106,7 @@ const Roadmap = () => {
                   className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 ml-auto max-w-md"
                   data-testid="roadmap-phase-3"
                 >
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-2xl font-bold text-neutral-900 mb-4">
                     PHASE 3
                   </h3>
                   <ul className="space-y-2 text-gray-600">
@@ -148,7 +148,7 @@ const Roadmap = () => {
                   className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-md"
                   data-testid="roadmap-phase-4"
                 >
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-2xl font-bold text-neutral-900 mb-4">
                     PHASE 4
                   </h3>
                   <ul className="space-y-2 text-gray-600">

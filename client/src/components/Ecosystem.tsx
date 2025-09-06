@@ -5,7 +5,7 @@ const Ecosystem = () => {
     <section id="ecosystem" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
             The PKL.CLUB Ecosystem
           </h2>
         </div>
@@ -22,7 +22,7 @@ const Ecosystem = () => {
                   <i className="fas fa-user text-pkl-green"></i>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">
+                  <h3 className="font-semibold text-neutral-900">
                     Player Profiles
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -41,7 +41,7 @@ const Ecosystem = () => {
                   <i className="fas fa-users text-pkl-green"></i>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Club Pages</h3>
+                  <h3 className="font-semibold text-neutral-900">Club Pages</h3>
                   <p className="text-gray-600 text-sm">
                     Showcase members, events, gear
                   </p>
@@ -58,7 +58,9 @@ const Ecosystem = () => {
                   <i className="fas fa-store text-pkl-green"></i>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Marketplace</h3>
+                  <h3 className="font-semibold text-neutral-900">
+                    Marketplace
+                  </h3>
                   <p className="text-gray-600 text-sm">
                     Gear, services, NFT collectibles, event tickets
                   </p>
@@ -75,7 +77,7 @@ const Ecosystem = () => {
                   <i className="fas fa-comments text-pkl-green"></i>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">
+                  <h3 className="font-semibold text-neutral-900">
                     Messaging & Groups
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -94,7 +96,7 @@ const Ecosystem = () => {
                   <i className="fas fa-calendar text-pkl-green"></i>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Events</h3>
+                  <h3 className="font-semibold text-neutral-900">Events</h3>
                   <p className="text-gray-600 text-sm">
                     Tournament registrations, NFT tickets, $PKL prize pools
                   </p>
@@ -111,7 +113,7 @@ const Ecosystem = () => {
                   <i className="fas fa-medal text-pkl-green"></i>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">
+                  <h3 className="font-semibold text-neutral-900">
                     Leaderboards & Collectibles
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -169,7 +171,7 @@ const Ecosystem = () => {
 
                     {/* NFT Badges */}
                     <div className="space-y-3">
-                      <div className="font-semibold text-gray-900">
+                      <div className="font-semibold text-neutral-900">
                         Achievement Badges
                       </div>
                       <div className="flex space-x-2">
