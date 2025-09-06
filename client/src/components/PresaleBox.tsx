@@ -87,7 +87,9 @@ const PresaleBox = () => {
             >
               {String(value).padStart(2, "0")}
             </div>
-            <div className="text-sm font-medium text-neurtral-900">{label}</div>
+            <div className="text-xs sm:text-sm font-medium text-neutral-900">
+              {label}
+            </div>
           </div>
         ))}
       </div>

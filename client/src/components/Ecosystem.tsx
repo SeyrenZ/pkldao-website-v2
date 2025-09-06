@@ -86,16 +86,16 @@ const Ecosystem = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 items-start">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left Navigation */}
-          <div className="space-y-4">
+          <div className="space-y-4 sm:order-1 order-2">
             {ecosystemTabs.map((tab) => (
               <EcosystemTabComponent key={tab.id} tab={tab} />
             ))}
           </div>
 
           {/* Right Mockup */}
-          <div className="w-full flex flex-col items-center justify-center">
+          <div className="w-full flex flex-col items-center justify-center sm:order-2 order-1">
             <div className="relative w-fit">
               {/* Phone Frame */}
               <div className="w-80 h-[600px] bg-gray-900 rounded-[3rem] p-3 shadow-2xl">

@@ -68,19 +68,19 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-pkl-white min-h-screen">
+    <div className="bg-pkl-white min-h-screen pb-14 sm:pb-0">
       <Navbar />
       <HeroSection />
-      {/* <BuyPKL /> */}
-      {/* <PKLProfileSection /> */}
-      {/* <Ecosystem /> */}
-      {/* <KeyFeatures /> */}
-      {/* <Tokenomics /> */}
-      {/* <Roadmap /> */}
-      {/* <HowToBuy /> */}
-      {/* <CardSection /> */}
-      {/* <FAQSection /> */}
-      {/* <Footer /> */}
+      <BuyPKL />
+      <PKLProfileSection />
+      <Ecosystem />
+      <KeyFeatures />
+      <Tokenomics />
+      <Roadmap />
+      <HowToBuy />
+      <CardSection />
+      <FAQSection />
+      <Footer />
 
       {/* Mobile Sticky CTA */}
       {isMobile && (

@@ -122,7 +122,7 @@ const PKLProfileSection = () => {
               ))}
             </div>
 
-            <div className="flex space-x-4 pt-4">
+            <div className="flex sm:flex-row flex-col gap-4 pt-4">
               <button
                 className="bg-pkl-yellow text-neutral-800/90 px-8 py-3 rounded-xl font-bold hover:bg-yellow-300 transition-colors"
                 data-testid="button-create-profile"

@@ -87,9 +87,13 @@ const RoadmapCard: React.FC<{ phase: RoadmapPhase; isLeft: boolean }> = ({
   phase,
   isLeft,
 }) => (
-  <div className={`w-1/2 ${isLeft ? "md:pr-12" : "md:pl-12"} pl-12 `}>
+  <div
+    className={`w-full md:w-1/2 ${
+      isLeft ? "md:pr-12 md:pl-0" : "md:pl-12"
+    } pl-16  `}
+  >
     <div
-      className={`bg-white rounded-2xl overflow-hidden  shadow-lg border border-gray-100 max-w-md ${
+      className={`bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 w-full md:max-w-md ${
         isLeft ? "md:ml-auto" : ""
       }`}
       data-testid={phase.testId}
@@ -153,13 +157,13 @@ const Roadmap = () => {
                   {isLeft ? (
                     <>
                       <RoadmapCard phase={phase} isLeft={true} />
-                      <div className="w-1/2 md:pl-12 hidden md:block">
+                      <div className="hidden md:block md:w-1/2 ">
                         {/* Empty space for alternating layout */}
                       </div>
                     </>
                   ) : (
                     <>
-                      <div className="w-1/2 md:pr-12 hidden md:block">
+                      <div className="hidden md:block md:w-1/2 ">
                         {/* Empty space for alternating layout */}
                       </div>
                       <RoadmapCard phase={phase} isLeft={false} />

@@ -62,7 +62,7 @@ const HowToBuy = () => {
           >
             How To <span className="text-pkl-yellow">Buy</span> $PKL Token
           </h2>
-          <p className="text-xl text-neutral-600 mb-8">
+          <p className="text-xl text-white mb-8">
             Start your journey in the PKL.CLUB ecosystem by purchasing tokens in
             the presale. Connect your wallet or directly above by connecting
             your wallet to the secure web3payments widget.
@@ -89,21 +89,21 @@ const HowToBuy = () => {
           {steps.map((step) => (
             <div
               key={step.id}
-              className="bg-white rounded-2xl shadow-lg border border-gray-100"
+              className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
               data-testid={`step-${step.id}`}
             >
               <button
                 onClick={() => toggleStep(step.id)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
+                className="w-full flex items-center justify-between o p-6 text-left hover:bg-gray-50 transition-colors"
               >
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-pkl-green rounded-xl flex items-center justify-center">
+                <div className="flex items-center space-x-4 ">
+                  <div className="sm:min-w-12 sm:min-h-12 min-w-10 min-h-10 bg-pkl-green rounded-xl flex items-center justify-center">
                     <span className="text-xl font-bold text-white">
                       {step.id}
                     </span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-neutral-800/90">
+                    <h3 className="text-lg sm:text-xl font-bold text-neutral-800/90">
                       {step.title}
                     </h3>
                     <p className="text-neutral-600">{step.subtitle}</p>

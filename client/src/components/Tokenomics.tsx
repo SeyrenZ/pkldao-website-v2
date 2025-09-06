@@ -164,7 +164,7 @@ const Tokenomics = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2
-            className="text-4xl lg:text-8xl font-bold mb-6"
+            className="text-5xl lg:text-8xl font-bold mb-6"
             style={{
               textShadow:
                 "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 4px 6px 0px rgba(0, 0, 0, 0.2)",
@@ -173,7 +173,7 @@ const Tokenomics = () => {
             $PKL Tokenomics
           </h2>
           <p
-            className="text-2xl lg:text-3xl text-pkl-yellow font-semibold"
+            className="text-3xl lg:text-3xl text-pkl-yellow font-semibold"
             style={{
               textShadow:
                 "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 4px 6px 0px rgba(0, 0, 0, 0.2)",
@@ -183,10 +183,10 @@ const Tokenomics = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left: Pie Chart */}
           <div className="relative">
-            <div className="w-96 h-96 mx-auto relative">
+            <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 mx-auto relative">
               {/* SVG Pie Chart */}
               <svg
                 viewBox="0 0 200 200"
@@ -217,12 +217,16 @@ const Tokenomics = () => {
 
               {/* Center Logo */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <img src="/logo.svg" alt="pkl-logo" className="w-24 h-24" />
+                <img
+                  src="/logo.svg"
+                  alt="pkl-logo"
+                  className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24"
+                />
               </div>
 
               {/* Percentage Labels */}
               <div
-                className="absolute top-14 -right-2 text-xl font-bold tracking-widest"
+                className="absolute top-10 -right-1 sm:top-12 sm:-right-2 lg:top-14 lg:-right-2 text-sm sm:text-lg lg:text-xl font-bold tracking-widest"
                 style={{
                   textShadow:
                     "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 4px 6px 0px rgba(0, 0, 0, 0.2)",
@@ -231,7 +235,7 @@ const Tokenomics = () => {
                 {tokenDistributions[0].percentage}%
               </div>
               <div
-                className="absolute top-64 -right-8 text-xl font-bold tracking-widest"
+                className="absolute top-44 -right-6 sm:top-52 sm:-right-7 lg:top-64 lg:-right-8 text-sm sm:text-lg lg:text-xl font-bold tracking-widest"
                 style={{
                   textShadow:
                     "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 4px 6px 0px rgba(0, 0, 0, 0.2)",
@@ -240,7 +244,7 @@ const Tokenomics = () => {
                 {tokenDistributions[1].percentage}%
               </div>
               <div
-                className="absolute -bottom-5 right-44 text-xl font-bold tracking-widest"
+                className="absolute -bottom-4 right-28 sm:-bottom-4 sm:right-36 lg:-bottom-5 lg:right-44 text-sm sm:text-lg lg:text-xl font-bold tracking-widest"
                 style={{
                   textShadow:
                     "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 4px 6px 0px rgba(0, 0, 0, 0.2)",
@@ -249,7 +253,7 @@ const Tokenomics = () => {
                 {tokenDistributions[2].percentage}%
               </div>
               <div
-                className="absolute bottom-20 -left-5 text-xl font-bold tracking-widest"
+                className="absolute bottom-14 -left-4 sm:bottom-16 sm:-left-4 lg:bottom-20 lg:-left-5 text-sm sm:text-lg lg:text-xl font-bold tracking-widest"
                 style={{
                   textShadow:
                     "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 4px 6px 0px rgba(0, 0, 0, 0.2)",
@@ -258,7 +262,7 @@ const Tokenomics = () => {
                 {tokenDistributions[3].percentage}%
               </div>
               <div
-                className="absolute top-20 -left-4 text-xl font-bold tracking-widest"
+                className="absolute top-14 -left-3 sm:top-16 sm:-left-3 lg:top-20 lg:-left-4 text-sm sm:text-lg lg:text-xl font-bold tracking-widest"
                 style={{
                   textShadow:
                     "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 4px 6px 0px rgba(0, 0, 0, 0.2)",
@@ -267,7 +271,7 @@ const Tokenomics = () => {
                 {tokenDistributions[4].percentage}%
               </div>
               <div
-                className="absolute -top-6 left-40 text-xl font-bold tracking-widest"
+                className="absolute -top-4 left-28 sm:-top-5 sm:left-32 lg:-top-6 lg:left-40 text-sm sm:text-lg lg:text-xl font-bold tracking-widest"
                 style={{
                   textShadow:
                     "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 4px 6px 0px rgba(0, 0, 0, 0.2)",
