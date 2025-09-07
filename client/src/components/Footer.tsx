@@ -1,4 +1,8 @@
 import React from "react";
+import TelegramIcon from "./icons/telegram-icon";
+import TwitterIcon from "./icons/twitter-icon";
+import InstagramIcon from "./icons/instagram-icon";
+import LinktreeIcon from "./icons/linktree-icon";
 
 // Data structures to eliminate redundancy
 const resourceLinks = [
@@ -16,10 +20,22 @@ const legalLinks = [
 ];
 
 const socialLinks = [
-  { href: "#", icon: "fab fa-telegram", testId: "link-telegram" },
-  { href: "#", icon: "fab fa-discord", testId: "link-discord" },
-  { href: "#", icon: "fab fa-twitter", testId: "link-twitter" },
-  { href: "#", icon: "fab fa-youtube", testId: "link-youtube" },
+  { href: "https://x.com/PKLCLUB", icon: "twitter", testId: "link-twitter" },
+  {
+    href: "https://t.me/pklclub_portal",
+    icon: "telegram",
+    testId: "link-telegram",
+  },
+  {
+    href: "https://www.instagram.com/pklclub.world",
+    icon: "instagram",
+    testId: "link-instagram",
+  },
+  {
+    href: "https://linktr.ee/PKL.CLUB",
+    icon: "linktree",
+    testId: "link-linktree",
+  },
 ];
 
 const appStoreButtons = [
@@ -74,15 +90,34 @@ const FooterLink: React.FC<FooterLinkProps> = ({
   </a>
 );
 
-const SocialIcon: React.FC<SocialIconProps> = ({ href, icon, testId }) => (
-  <a
-    href={href}
-    className="w-10 h-10 bg-zinc-100 rounded-xl flex items-center justify-center hover:bg-pkl-green transition-colors hover:text-white"
-    data-testid={testId}
-  >
-    <i className={icon}></i>
-  </a>
-);
+const SocialIcon: React.FC<SocialIconProps> = ({ href, icon, testId }) => {
+  const renderIcon = () => {
+    switch (icon) {
+      case "telegram":
+        return <TelegramIcon />;
+      case "twitter":
+        return <TwitterIcon />;
+      case "instagram":
+        return <InstagramIcon />;
+      case "linktree":
+        return <LinktreeIcon />;
+      default:
+        return <i className={`fab fa-${icon}`}></i>;
+    }
+  };
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-10 h-10 bg-zinc-100 rounded-xl flex items-center justify-center hover:bg-pkl-green transition-colors hover:text-white"
+      data-testid={testId}
+    >
+      {renderIcon()}
+    </a>
+  );
+};
 
 const AppStoreButton: React.FC<AppStoreButtonProps> = ({
   icon,
