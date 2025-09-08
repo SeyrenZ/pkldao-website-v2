@@ -49,29 +49,29 @@ const tokenDistributions: TokenDistribution[] = [
     id: "presale",
     name: "Presale",
     amount: 2000000000,
-    percentage: 20,
-    color: "bg-pkl-yellow",
-    strokeColor: "#c4f000",
-    strokeDasharray: "100.53 401.06",
+    percentage: 25,
+    color: "#00a866",
+    strokeColor: "#00a866",
+    strokeDasharray: "140.53 401.06",
     strokeDashoffset: "0",
   },
   {
     id: "development",
     name: "Development",
     amount: 2500000000,
-    percentage: 25,
-    color: "bg-pkl-green",
-    strokeColor: "#00a86b",
-    strokeDasharray: "125.66 401.06",
-    strokeDashoffset: "-100.53",
+    percentage: 20,
+    color: "#c4f000",
+    strokeColor: "#c4f000",
+    strokeDasharray: "425.66",
+    strokeDashoffset: "-140.53",
   },
   {
     id: "staking",
     name: "Staking",
     amount: 1500000000,
     percentage: 15,
-    color: "bg-pkl-orange",
-    strokeColor: "#ff533e",
+    color: "#7ed957",
+    strokeColor: "#7ed957",
     strokeDasharray: "75.40 401.06",
     strokeDashoffset: "-226.19",
   },
@@ -80,8 +80,8 @@ const tokenDistributions: TokenDistribution[] = [
     name: "Partners",
     amount: 1500000000,
     percentage: 15,
-    color: "bg-indigo-500",
-    strokeColor: "#4f46e5",
+    color: "#d0e83b",
+    strokeColor: "#d0e83b",
     strokeDasharray: "75.40 401.06",
     strokeDashoffset: "-301.59",
   },
@@ -90,8 +90,8 @@ const tokenDistributions: TokenDistribution[] = [
     name: "Exchanges",
     amount: 1500000000,
     percentage: 15,
-    color: "bg-cyan-500",
-    strokeColor: "#06b6d4",
+    color: "#fdbf00",
+    strokeColor: "#fdbf00",
     strokeDasharray: "75.40 401.06",
     strokeDashoffset: "-376.99",
   },
@@ -100,9 +100,9 @@ const tokenDistributions: TokenDistribution[] = [
     name: "Founders Fund",
     amount: 1000000000,
     percentage: 10,
-    color: "bg-amber-500",
-    strokeColor: "#f59e0b",
-    strokeDasharray: "50.27 401.06",
+    color: "#ff533e",
+    strokeColor: "#ff533e",
+    strokeDasharray: "421.06",
     strokeDashoffset: "-452.39",
   },
 ];
@@ -141,7 +141,10 @@ const DistributionItem: React.FC<{ distribution: TokenDistribution }> = ({
     data-testid={`distribution-${distribution.id}`}
   >
     <div className="flex items-center space-x-3">
-      <div className={`w-4 h-4 ${distribution.color} rounded-full`}></div>
+      <div
+        className="w-4 h-4 rounded-full"
+        style={{ backgroundColor: distribution.color }}
+      ></div>
       <span className="font-semibold text-neutral-800/90">
         {distribution.name}
       </span>
