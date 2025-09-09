@@ -13,6 +13,7 @@ import CardSection from "@/components/CardSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import ConnectWallet from "@/components/ConnectWallet";
+import Play4Pickles from "@/components/Play4Pickles";
 
 const Home = () => {
   const isMobile = useIsMobile();
@@ -23,6 +24,7 @@ const Home = () => {
       <HeroSection />
       <BuyPKL />
       <PKLProfileSection />
+      <Play4Pickles />
       <Ecosystem />
       <KeyFeatures />
       <Tokenomics />
