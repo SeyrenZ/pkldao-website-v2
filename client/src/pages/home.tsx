@@ -14,6 +14,7 @@ import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import ConnectWallet from "@/components/ConnectWallet";
 import Play4Pickles from "@/components/Play4Pickles";
+import ProfileNFTs from "@/components/ProfileNFTs";
 
 const Home = () => {
   const isMobile = useIsMobile();
@@ -25,7 +26,9 @@ const Home = () => {
       <BuyPKL />
       <PKLProfileSection />
       <Play4Pickles />
+      <ProfileNFTs />
       <Ecosystem />
+
       <KeyFeatures />
       <Tokenomics />
       <Roadmap />
