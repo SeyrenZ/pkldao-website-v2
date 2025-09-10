@@ -11,36 +11,36 @@ interface Benefit {
 const BuyPKL = () => {
   const benefits: Benefit[] = [
     {
-      id: "tournaments",
-      icon: "fas fa-trophy",
+      id: "membership",
+      icon: "fas fa-id-card",
       iconBg: "bg-pkl-green/10",
-      title: "Exclusive Access to Tournaments",
+      title: "Platform Membership Access",
       description:
-        "Use $PKL for registration and prizes in exclusive tournaments worldwide.",
+        "Your $PKL tokens unlock premium features, exclusive events, and community benefits.",
     },
     {
-      id: "fees",
-      icon: "fas fa-percentage",
+      id: "rewards",
+      icon: "fas fa-gift",
       iconBg: "bg-pkl-yellow/20",
-      title: "Reduced Marketplace Fees",
+      title: "Play-to-Earn Rewards",
       description:
-        "Lower costs for players and vendors inside PKL.CLUB marketplace.",
+        "Earn $PKL through gameplay, achievements, and community participation — not speculation.",
     },
     {
-      id: "staking",
-      icon: "fas fa-coins",
+      id: "utility",
+      icon: "fas fa-shopping-cart",
       iconBg: "bg-pkl-orange/10",
-      title: "Staking Rewards",
+      title: "Real Utility & Commerce",
       description:
-        "Stake $PKL to earn yield and XP boosts in the PKL.CLUB ecosystem.",
+        "Use $PKL for tournament fees, marketplace purchases, and club memberships across the ecosystem.",
     },
     {
       id: "governance",
-      icon: "fas fa-vote-yea",
-      iconBg: "bg-pkl-green/10",
-      title: "Community Governance",
+      icon: "fas fa-users",
+      iconBg: "bg-blue-500/10",
+      title: "Community Participation",
       description:
-        "Vote on new features, tournaments, and partnerships in the DAO.",
+        "Participate in community decisions and feature development through our corporate governance structure.",
     },
   ];
 
@@ -52,9 +52,9 @@ const BuyPKL = () => {
             Buy $PKL Token Now!
           </h2>
           <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-            PKL.CLUB combines the world's fastest growing sport with blockchain
-            innovation. Owning $PKL gives you more than a token — it gives you a
-            place in the Pickleball revolution.
+            $PKL tokens are utility tokens that power real engagement in the
+            Pickleball community. Join a platform built for players, clubs, and
+            vendors to connect, compete, and grow together.
           </p>
         </div>
 

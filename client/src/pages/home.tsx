@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import BuyPKL from "@/components/BuyPKL";
 import PKLProfileSection from "@/components/PKLProfileSection";
+import ForClubsVenues from "@/components/ForClubsVenues";
+import ForBrandsVendors from "@/components/ForBrandsVendors";
 import Ecosystem from "@/components/Ecosystem";
 import KeyFeatures from "@/components/KeyFeatures";
 import Tokenomics from "@/components/Tokenomics";
@@ -27,13 +29,15 @@ const Home = () => {
       <PKLProfileSection />
       <Play4Pickles />
       <ProfileNFTs />
+      <ForClubsVenues />
+      <ForBrandsVendors />
       <Ecosystem />
 
       <KeyFeatures />
       <Tokenomics />
       <Roadmap />
       <HowToBuy />
-      <CardSection />
+      {/* <CardSection /> */}
       <FAQSection />
       <Footer />
 

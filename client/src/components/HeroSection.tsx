@@ -109,22 +109,27 @@ const HeroSection = () => {
               Pickleball Community
             </h1>
             <h2
-              className="text-xl lg:text-3xl font-semibold font-fredoka text-center sm:text-left"
+              className="text-xl lg:text-2xl font-semibold font-fredoka text-center sm:text-left"
               style={{
                 textShadow:
                   "1px 2px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 2px 0px #000, 3px 5px 0px rgba(0, 0, 0, 0.2)",
               }}
             >
-              The PKL Token is{" "}
-              <span className="text-pkl-yellow ">Coming Soon!</span>
+              Players, clubs, and brands unite here to play, connect, and power
+              a circular economy that keeps the sport in the hands of its
+              community.
             </h2>
             <div className="sm:hidden py-4">
               <PresaleBox />
             </div>
-            <p className="text-lgsm:text-xl text-white leading-relaxed font-fredoka text-center sm:text-left">
-              Join the revolution in decentralized sports communities. The
-              future of Pickleball is almost here!
-            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
+              <button className="bg-pkl-yellow text-pkl-green px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-colors font-fredoka">
+                Join the Movement
+              </button>
+              <button className="bg-white/20 backdrop-blur-sm text-white border-2 border-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-pkl-green transition-colors font-fredoka">
+                Buy $PKL Token
+              </button>
+            </div>
 
             {/* Benefits List */}
             <div className="space-y-4 font-fredoka">
